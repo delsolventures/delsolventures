@@ -1,7 +1,7 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { CssBaseline } from "@nextui-org/react";
-
+import Script from "next/script";
 import Footer from "../components/footermini";
 
 //import Head from "next/head";
@@ -11,7 +11,7 @@ class MyDocument extends Document {
     const initialProps = await Document.getInitialProps(ctx);
     return {
       ...initialProps,
-      styles: React.Children.toArray([initialProps.styles])
+      styles: React.Children.toArray([initialProps.styles]),
     };
   }
 
@@ -53,10 +53,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
             rel="stylesheet"
           />
-          <script
+          <Script
             src="https://kit.fontawesome.com/5834df7891.js"
-            crossorigin="anonymous"
-          ></script>
+            crossOrigin="anonymous"
+          />
           <link
             rel="icon"
             href="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/logo-ds.png"
