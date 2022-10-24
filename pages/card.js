@@ -1,6 +1,4 @@
-import { Grid, Card, Col, Row, Button, Text, Link } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import {
   faShieldCat,
   faPepperHot,
@@ -9,43 +7,37 @@ import {
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../components/navbar";
+import Image from "next/image";
 import SEO from "../components/seo";
-import SectionTitle from "../components/sectionTitle";
-import PopupWidget from "../components/popupWidget";
-export default function Portfolio() {
+
+export default function Home() {
   return (
     <>
       <SEO
-        title="Portfolio | del SOL"
-        description="Portfolio del SOL. Early-stage VC in biotech, cleantech, foodtech & mobility."
+        title="Home | del SOL"
+        description="Early-stage VC in biotech, cleantech, foodtech & mobility."
       />
-      <div className="main">
-        <Navbar />
-        <SectionTitle pretitle="Portfolio" title="del SOL Mission Statement">
-          "Our mission is to support Southern Californian start-ups and
-          communities to create sustainable, renewable & secure platforms."
-        </SectionTitle>
-        <div className="container w-10/12 items-center p-8 mx-auto w-full place-content-center">
-          <div className="flex flex-wrap sm:flex-no-wrap items-center justify-between w-full">
-            <div className="w-full sm:w-1/2 p-4">
-              <Card1 />
-            </div>
-            <div className="w-full sm:w-1/2 p-4">
-              <Card2 />
-            </div>
-            <div className="w-full sm:w-1/2 p-4">
-              <Card3 />
-            </div>
-            <div className="w-full sm:w-1/2 p-4">
-              <Card4 />
-            </div>
-            <div className="w-full sm:w-1/2 p-4">
-              <Card5 />
-            </div>
+
+      <Navbar />
+      <div className="container w-10/12 items-center p-8 mx-auto w-full place-content-center">
+        <div className="flex flex-wrap sm:flex-no-wrap items-center justify-between w-full">
+          <div className="w-full sm:w-1/2 p-4">
+            <Card1 />
+          </div>
+          <div className="w-full sm:w-1/2 p-4">
+            <Card2 />
+          </div>
+          <div className="w-full sm:w-1/2 p-4">
+            <Card3 />
+          </div>
+          <div className="w-full sm:w-1/2 p-4">
+            <Card4 />
+          </div>
+          <div className="w-full sm:w-1/2 p-4">
+            <Card5 />
           </div>
         </div>
       </div>
-      <PopupWidget />
     </>
   );
 }
