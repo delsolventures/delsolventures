@@ -1,4 +1,3 @@
-import { Grid, Card, Col, Row, Button, Text, Link } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import {
@@ -7,6 +6,7 @@ import {
   faSeedling,
   faChargingStation,
   faSun,
+  faPhotoVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../components/navbar";
 import SEO from "../components/seo";
@@ -25,22 +25,25 @@ export default function Portfolio() {
           "Our mission is to support Southern Californian start-ups and
           communities to create sustainable, renewable & secure platforms."
         </SectionTitle>
-        <div className="container w-10/12 items-center p-8 mx-auto w-full place-content-center">
-          <div className="flex flex-wrap sm:flex-no-wrap items-center justify-between w-full">
-            <div className="w-full sm:w-1/2 p-4">
+        <div className="container  items-center p-8 mx-auto w-full place-content-center">
+          <div className="flex flex-wrap sm:flex-no-wrap items-center justify-between w-full h-auto">
+            <div className="w-full sm:w-1/3 p-4">
               <Card1 />
             </div>
-            <div className="w-full sm:w-1/2 p-4">
+            <div className="w-full sm:w-1/3 p-4">
               <Card2 />
             </div>
-            <div className="w-full sm:w-1/2 p-4">
+            <div className="w-full sm:w-1/3 p-4">
               <Card3 />
             </div>
-            <div className="w-full sm:w-1/2 p-4">
+            <div className="w-full sm:w-1/3 p-4">
               <Card4 />
             </div>
-            <div className="w-full sm:w-1/2 p-4">
+            <div className="w-full sm:w-1/3 p-4">
               <Card5 />
+            </div>
+            <div className="w-full sm:w-1/3 p-4">
+              <Card6 />
             </div>
           </div>
         </div>
@@ -66,8 +69,8 @@ function Card1() {
         />
         <p className="text-trueGray-100 text-md mb-4">
           Vertical systems. <br />
-          Climate-controlled environments. <br />
-          Reduced carbon emissions.
+          Climate-controlled.. <br />
+          Reduced emissions.
         </p>
       </div>
       <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
@@ -140,7 +143,7 @@ function Card3() {
           className="text-green-700 dark:text-green-400 pr-2"
           aria-hidden="true"
         />{" "}
-        Sustainable. Renewable.
+        Sustain. Renew.
       </div>
     </div>
   );
@@ -162,7 +165,7 @@ function Card4() {
         />
         <p className="text-trueGray-100 text-md mb-4">
           Hybrid EV. <br />
-          EV Charging Infrastructure. <br />
+          EV Infrastructure. <br />
           Renewalable Energy. <br />
         </p>
       </div>
@@ -182,7 +185,39 @@ function Card5() {
   return (
     <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 px-6 border-b border-trueGray-200">
-        Sunny Dreams
+        Creators
+      </h5>
+      <div>
+        <Image
+          className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
+          src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-f701b63cfe38e57fa0408c238af32027.png"
+          height="300"
+          width="300"
+          layout="responsive"
+        />
+        <p className="text-trueGray-100 text-md mb-4">
+          Create. <br />
+          Socalize. <br />
+          Influence. <br />
+        </p>
+      </div>
+      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
+        <FontAwesomeIcon
+          icon={faPhotoVideo} //"fa-solid fa-pepper-hot"
+          className="text-white pr-2"
+          aria-hidden="true"
+        />{" "}
+        Content. Partners.
+      </div>
+    </div>
+  );
+}
+
+function Card6() {
+  return (
+    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+      <h5 className="text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 px-6 border-b border-trueGray-200">
+        del SOL
       </h5>
       <div>
         <Image

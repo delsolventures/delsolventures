@@ -1,4 +1,5 @@
 import { Collapse, Text, Link, Table } from "@nextui-org/react";
+import Image from "next/image";
 import Navbar from "../components/navbar";
 //import Footer from "../components/footer";
 import SEO from "../components/seo";
@@ -12,21 +13,8 @@ export default function Terms() {
       />
       <Navbar transparent />
       <main className="text-trueGray-700">
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
-          <div
-            className="absolute top-0 w-full h-full bg-center bg-contain bg-no-repeat"
-            style={{
-              backgroundImage:
-                "url('https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png')"
-              //"url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')"
-            }}
-          >
-            <span
-              id="blackOverlay"
-              className="w-full h-full absolute opacity-75"
-            ></span>
-          </div>
-          {/*  <div className="container relative mx-auto">
+        <div className="relative py-8 flex content-center items-center justify-center min-h-screen-75">
+          <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
@@ -39,13 +27,20 @@ export default function Terms() {
                   <Text className="mt-4 text-lg text-trueGray-200">
                     Last Updated 1 Jan {new Date().getFullYear()}
                   </Text>
+                  <Image
+                    className="bg-center bg-cover bg-no-repeat"
+                    src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png"
+                    height="50"
+                    width="50"
+                    layout="responsive"
+                  />
                 </div>
               </div>
             </div>
-          </div>*/}
+          </div>
         </div>
 
-        <section className="relative py-20 text-trueGray-700">
+        <section className="relative py-4 text-trueGray-700">
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full  ml-auto mr-auto px-4">
