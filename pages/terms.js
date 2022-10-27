@@ -108,7 +108,8 @@ export default function Terms() {
                   title="INTELLECTUAL PROPERTY RIGHTS"
                   expanded
                   color="#f3f4f6"
-                  className="text-trueGray-700"
+
+                  //                  className="text-trueGray-700 bg-trueGray-700"
                 >
                   <Text className="text-trueGray-700">
                     Unless otherwise indicated, the Site and the Marketplace

@@ -60,7 +60,7 @@ export default function Privacy() {
                       personal information and your right to privacy. If you
                       have any questions or concerns about this privacy notice
                       or our practices with regard to your personal information,
-                      please contact us at 4mb@ud.me. This privacy notice
+                      please contact us at delsolventures@skiff.com. This privacy notice
                       describes how we might use your information if you:
                       <Link href="/">
                         Visit our website at https://delsolventures.nft

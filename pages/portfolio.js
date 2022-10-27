@@ -55,7 +55,7 @@ export default function Portfolio() {
 
 function Card1() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3  border-b border-trueGray-200">
         Foodtech
       </h5>
@@ -68,9 +68,9 @@ function Card1() {
           layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">
-          Vertical systems. <br />
-          Climate-controlled.. <br />
-          Reduced emissions.
+          Vertical Farm Systems. <br />
+          Climate-Control. <br />
+          Reduced Emissions.
         </p>
       </div>
       <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
@@ -87,7 +87,7 @@ function Card1() {
 
 function Card2() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3  border-b border-trueGray-200">
         Cybersecurity
       </h5>
@@ -100,7 +100,7 @@ function Card2() {
           layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">
-          Digital Identity. <br />
+          Digital Identity Management. <br />
           Data Privacy. <br />
           Privacy Protection Toolkits.
         </p>
@@ -119,7 +119,7 @@ function Card2() {
 
 function Card3() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Cleantech
       </h5>
@@ -132,7 +132,7 @@ function Card3() {
           layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">
-          Offgrid Solutions <br />
+          Offgrid Solutions. <br />
           Solid State Batteries. <br />
           Community Renewal.
         </p>
@@ -151,7 +151,7 @@ function Card3() {
 
 function Card4() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Mobility
       </h5>
@@ -166,7 +166,7 @@ function Card4() {
         <p className="text-trueGray-100 text-md mb-4">
           Hybrid EV. <br />
           EV Infrastructure. <br />
-          Renewalable Energy. <br />
+          Stored Energy. <br />
         </p>
       </div>
       <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
@@ -183,8 +183,8 @@ function Card4() {
 
 function Card5() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 px-6 border-b border-trueGray-200">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Creators
       </h5>
       <div>
@@ -215,8 +215,8 @@ function Card5() {
 
 function Card6() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 px-6 border-b border-trueGray-200">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+      <h5 className="text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         del SOL
       </h5>
       <div>

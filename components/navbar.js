@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeChanger from "./darkSwitch";
-
+import ActiveLink from "./activelink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -32,7 +32,7 @@ export default function Navbar() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-trueGray-400 hover:bg-trueGray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-trueGray-400 hover:bg-trueGray-100 dark:hover:bg-trueGray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <FontAwesomeIcon
@@ -75,19 +75,9 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block mx-2 mt-2">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "text-trueGray-700 hover:bg-trueGray-400 dark:text-trueGray-100 dark:hover:bg-trueGray-400"
-                            : "text-trueGray-700 hover:bg-trueGray-400 dark:text-trueGray-100 dark:hover:bg-trueGray-400",
-                          "px-3 py-2 rounded-md text-md font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
+                      <ActiveLink key={item.name} href={item.href}>
                         {item.name}
-                      </a>
+                      </ActiveLink>
                     ))}
                   </div>
                 </div>
