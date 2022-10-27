@@ -1,7 +1,6 @@
-# del sol Ventures
+# del SOL VENTURES
 
-Nextly is a free landing page & marketing website template for startups and indie projects. Its built with Next.js & TailwindCSS.
-And its completely open-source.
+Built with Next.js, NextUI & TailwindCSS.
 
 ![image](https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/delsolendlesssummer.png)
 

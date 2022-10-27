@@ -10,13 +10,13 @@ import { faBars, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "About", href: "/about", current: false },
-  { name: "Portfolio", href: "/portfolio", current: false }
+  { name: "Portfolio", href: "/portfolio", current: false },
 ];
 const collapsedItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Portfolio", href: "/portfolio" },
-  { name: "Contact", href: "/contact" }
+  { name: "Contact", href: "/contact" },
 ];
 
 function classNames(...classes) {
@@ -67,7 +67,7 @@ export default function Navbar() {
                         alt="del SOL"
                         height="50"
                         width="50"
-                        className="border-2 border-solid border-trueGray-100"
+                        className="text-trueGray-700 dark:text-trueGray-100"
                       />
                     </a>
                   </Link>
