@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       const cal = await getCalApi();
       cal("floatingButton", {
         calLink: "delsolventures/30min",
+        buttonText: "Schedule A Call",
         buttonColor: "#0284c7",
         buttonTextColor: "#f3f4f6",
         buttonPosition: "bottom-left"
