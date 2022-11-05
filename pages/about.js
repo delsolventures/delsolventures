@@ -39,7 +39,6 @@ export default function About() {
                           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/logo-dsvi-light.svg"
                           height={150}
                           width={150}
-                          layout="responsive"
                           className="hover:border-trueGray-600 rounded-half h-auto align-middle border-2 max-w-150-px px-2 py-2 focus:bg-trueGray-500"
                         />
                       </Link>
