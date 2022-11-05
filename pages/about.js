@@ -2,7 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { Text, Image } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faAt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLocationDot,
+  faAt,
+  faBuildingWheat,
+  faPlugCircleBolt,
+  faCompass,
+} from "@fortawesome/free-solid-svg-icons";
 //import Image from "next/image";
 import SectionTitle from "../components/sectionTitle";
 import SEO from "../components/seo";
@@ -28,16 +34,14 @@ export default function About() {
                   <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                     <div className="relative -mt-32">
                       <Link href="/" alt="Home">
-                        <a>
-                          <Image
-                            alt="del SOL VENTURES"
-                            src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/logo-dsvi-light.svg"
-                            height={150}
-                            width={150}
-                            layout="responsive"
-                            className="hover:border-trueGray-600 rounded-half h-auto align-middle border-2 max-w-150-px px-2 py-2 focus:bg-trueGray-500"
-                          />
-                        </a>
+                        <Image
+                          alt="del SOL VENTURES"
+                          src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/logo-dsvi-light.svg"
+                          height={150}
+                          width={150}
+                          layout="responsive"
+                          className="hover:border-trueGray-600 rounded-half h-auto align-middle border-2 max-w-150-px px-2 py-2 focus:bg-trueGray-500"
+                        />
                       </Link>
                     </div>
                   </div>
@@ -45,10 +49,10 @@ export default function About() {
                     <div className="py-6 px-3 mt-16 sm:mt-0">
                       <Link href="/contact">
                         <button
-                          className="border-2 border-solid border-trueGray-600  bg-trueSky-600 active:bg-trueGray-600 uppercase text-trueGray-700 dark:text-trueGray-100 font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                          className="border-2 border-solid border-trueGray-100  bg-trueSky-600 active:bg-trueGray-600 uppercase text-trueGray-700 dark:text-trueGray-100 font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                           type="button"
                         >
-                          <a href="/contact">Contact</a>
+                          Contact
                         </button>
                       </Link>
                     </div>
@@ -57,40 +61,34 @@ export default function About() {
                     <div className="flex justify-center py-4 lg:pt-4 pt-8">
                       <div className="mr-4 p-3 text-center">
                         <span className="hover:border-trueOrange-600 text-xl font-bold block uppercase tracking-wide text-trueGray-700 dark:text-trueGray-100">
-                          <Link href="https://www.linkedin.com/company/delsolventures/">
-                            <a
-                              href="https://www.linkedin.com/company/delsolventures/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <LinkedInLogo />
-                            </a>
+                          <Link
+                            href="https://www.linkedin.com/company/delsolventures/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <LinkedInLogo />
                           </Link>
                         </span>
                       </div>
                       <div className="mr-4 p-3 text-center">
                         <span className="hover:border-trueOrange-600 text-xl font-bold block uppercase tracking-wide text-trueGray-700 dark:text-trueGray-100">
-                          <Link href="https://discord.gg/adnE56ct3D">
-                            <a
-                              href="https://discord.gg/adnE56ct3D"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <DiscordLogo />
-                            </a>
+                          <Link
+                            href="https://discord.gg/adnE56ct3D"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <DiscordLogo />
                           </Link>
                         </span>
                       </div>
                       <div className="lg:mr-4 p-3 text-center">
                         <span className=" text-xl font-bold block uppercase tracking-wide text-trueGray-700 dark:text-trueGray-100">
-                          <Link href="https://ud.me/delsolventures.nft">
-                            <a
-                              href="https://ud.me/delsolventures.nft"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <UDLogo />
-                            </a>
+                          <Link
+                            href="https://ud.me/delsolventures.nft"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <UDLogo />
                           </Link>
                         </span>
                       </div>
@@ -138,7 +136,7 @@ export default function About() {
                       <div className="my-8 text-lg leading-relaxed text-trueGray-700 dark:text-trueGray-100">
                         <p className="my-4">
                           <FontAwesomeIcon
-                            icon="fa-solid fa-plug-circle-bolt"
+                            icon={faPlugCircleBolt}
                             className="mr-2 text-lg text-trueGray-700 dark:text-trueGray-100 "
                             aria-hidden="true"
                           />
@@ -146,7 +144,7 @@ export default function About() {
                         </p>
                         <p className="my-4">
                           <FontAwesomeIcon
-                            icon="fa-solid fa-building-wheat"
+                            icon={faBuildingWheat}
                             className="mr-2 text-lg text-trueGray-700 dark:text-trueGray-100 "
                             aria-hidden="true"
                           />
@@ -154,7 +152,7 @@ export default function About() {
                         </p>
                         <p className="my-4">
                           <FontAwesomeIcon
-                            icon="fa-solid fa-compass"
+                            icon={faCompass}
                             className="mr-2 text-lg text-trueGray-700 dark:text-trueGray-100"
                             aria-hidden="true"
                           />

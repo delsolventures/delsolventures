@@ -1,9 +1,9 @@
 module.exports = {
   i18n: {
     locales: ["en"],
-    defaultLocale: "en"
+    defaultLocale: "en",
   },
-  target: "serverless",
+  // target: "serverless",
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback.fs = false;
@@ -11,6 +11,6 @@ module.exports = {
     return config;
   },
   images: {
-    domains: ["storageapi.fleek.co"]
-  }
+    domains: ["storageapi.fleek.co"],
+  },
 };

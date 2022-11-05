@@ -13,29 +13,20 @@ export default function Privacy() {
         description="Privacy del SOL. Early-stage VC in biotech, cleantech, foodtech & mobility."
       />
       <Navbar transparent />
-      <main>
+      <main className="mx-auto px-8">
         <div className="relative py-8 content-center items-center justify-center min-h-screen-75">
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
-                  <Text
-                    h1
-                    className="uppercase text-trueGray-100 font-semibold text-5xl"
-                  >
-                    Privacy Notice
-                  </Text>
-                  <Text className="mt-4 text-lg text-trueGray-100">
-                    Last Updated 1 Jan {new Date().getFullYear()}
-                  </Text>
-                  <Image
-                    className="bg-center bg-cover bg-no-repeat"
-                    src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-4fd6e41d0d4782e287ad04e8174a1ebd.png"
-                    height="50"
-                    width="50"
-                    layout="responsive"
-                  />
-                </div>
+                <Text
+                  h1
+                  className="uppercase text-trueGray-100 font-semibold text-5xl"
+                >
+                  Privacy Notice
+                </Text>
+                <Text className="mt-4 text-lg text-trueGray-100">
+                  Last Updated 1 Jan {new Date().getFullYear()}
+                </Text>
               </div>
             </div>
           </div>
@@ -60,8 +51,9 @@ export default function Privacy() {
                       personal information and your right to privacy. If you
                       have any questions or concerns about this privacy notice
                       or our practices with regard to your personal information,
-                      please contact us at delsolventures@skiff.com. This privacy notice
-                      describes how we might use your information if you:
+                      please contact us at delsolventures@skiff.com. This
+                      privacy notice describes how we might use your information
+                      if you:
                       <Link href="/">
                         Visit our website at https://delsolventures.nft
                       </Link>
@@ -482,16 +474,14 @@ export default function Privacy() {
                     </Text>
                   </Collapse>
                   <Collapse title="13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU? ">
-                    <Text span>
+                    <Text>
                       Based on the applicable laws of your country, you may have
                       the right to request access to the personal information we
                       collect from you, change that information, or delete it in
                       some circumstances. To request to review, update, or
                       delete your personal information, please submit a request
                       by clicking here for our:{" "}
-                      <Link span href="/contact">
-                        Contact Form.
-                      </Link>
+                      <Link href="/contact">Contact Form.</Link>
                     </Text>
                   </Collapse>
                 </Collapse.Group>

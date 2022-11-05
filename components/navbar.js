@@ -32,7 +32,7 @@ export default function Navbar() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-trueGray-400 hover:bg-trueGray-100 dark:hover:bg-trueGray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-trueGray-400 hover:bg-trueGray-100 dark:hover:bg-trueGray-700 hover:text-trueGray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <FontAwesomeIcon
@@ -59,8 +59,7 @@ export default function Navbar() {
                       width="50"
                     />
                   </div>*/}
-                  <Link href="/">
-                    <a href="/" className="inline-flex h-content w-auto">
+                  <Link href="/" className="inline-flex h-content w-auto">
                       {/*className="hidden h-8 w-auto lg:block*/}
                       <Image
                         src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/logo-dsvi-light.svg"
@@ -69,7 +68,7 @@ export default function Navbar() {
                         width="50"
                         className="text-trueGray-700 dark:text-trueGray-100"
                       />
-                    </a>
+                    
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block mx-2 mt-2">
@@ -85,7 +84,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* <button
                   type="button"
-                  className="rounded-full bg-trueGray-800 p-1 text-trueGray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-trueGray-800"
+                  className="rounded-full bg-trueGray-800 p-1 text-trueGray-400 hover:text-trueGray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-trueGray-800"
                 >
                   <span className="sr-only">View notifications</span>
                   <FontAwesomeIcon

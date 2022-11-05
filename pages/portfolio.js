@@ -63,9 +63,10 @@ function Card1() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-304181b3182265078bad3744c08e8ab6.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
           layout="responsive"
+          alt="Foodtech"
         />
         <p className="text-trueGray-100 text-md mb-4">
           Vertical Farm Systems. <br />
@@ -95,9 +96,10 @@ function Card2() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-4dd5fd75c6118b7161fca2ffd991842a.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
           layout="responsive"
+          alt="Cybersecurity"
         />
         <p className="text-trueGray-100 text-md mb-4">
           Digital Identity Management. <br />
@@ -127,9 +129,10 @@ function Card3() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-5ef96019d86f8e5221c37d9733cb5492.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
           layout="responsive"
+          alt="Cleantech"
         />
         <p className="text-trueGray-100 text-md mb-4">
           Offgrid Solutions. <br />
@@ -159,8 +162,9 @@ function Card4() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-5af1ef6e7de4a6e775448b69ac0a9851.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
+          alt="Mobility"
           layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">
@@ -191,9 +195,10 @@ function Card5() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-f701b63cfe38e57fa0408c238af32027.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
           layout="responsive"
+          alt="Creators"
         />
         <p className="text-trueGray-100 text-md mb-4">
           Create. <br />
@@ -204,7 +209,7 @@ function Card5() {
       <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
         <FontAwesomeIcon
           icon={faPhotoVideo} //"fa-solid fa-pepper-hot"
-          className="text-white pr-2"
+          className="text-trueGray-100 pr-2"
           aria-hidden="true"
         />{" "}
         Content. Partners.
@@ -223,8 +228,9 @@ function Card6() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-3c3a259ced051ff05ebf18363560f8a3.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
+          alt="del SOL"
           layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -13,7 +14,7 @@ function ActiveLink({ children, href }) {
   };
 
   return (
-    <a
+    <Link
       href={href}
       onClick={handleClick}
       className={classNames(
@@ -24,7 +25,7 @@ function ActiveLink({ children, href }) {
       )}
     >
       {children}
-    </a>
+    </Link>
   );
 }
 

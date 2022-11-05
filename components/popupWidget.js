@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import { Disclosure, Transition } from "@headlessui/react";
+import Link from "next/link";
 
 export default function PopupWidget() {
   const {
@@ -59,7 +60,7 @@ export default function PopupWidget() {
                 enterFrom="opacity-0 -rotate-45 scale-75"
                 leave="transition duration-100 transform ease"
                 leaveTo="opacity-0 -rotate-45"
-                className="absolute w-6 h-6 text-white"
+                className="absolute w-6 h-6 text-trueGray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +84,7 @@ export default function PopupWidget() {
                 enterFrom="opacity-0 rotate-45 scale-75"
                 leave="transition duration-100 transform ease"
                 leaveTo="opacity-0 rotate-45"
-                className="absolute w-6 h-6 text-white"
+                className="absolute w-6 h-6 text-trueGray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,8 +112,8 @@ export default function PopupWidget() {
             >
               <Disclosure.Panel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-trueGray-300 dark:border-trueGray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-trueSky-600">
-                  <h3 className="text-lg text-white">How can we help?</h3>
-                  <p className="text-white opacity-50">
+                  <h3 className="text-lg text-trueGray-100">How can we help?</h3>
+                  <p className="text-trueGray-100 opacity-50">
                     We usually respond in a few hours
                   </p>
                 </div>
@@ -232,11 +233,11 @@ export default function PopupWidget() {
                       <div className="mb-3">
                         <button
                           type="submit"
-                          className="w-full px-3 py-4 text-white bg-trueSky-500 rounded-md focus:bg-trueSky-600 focus:outline-none"
+                          className="w-full px-3 py-4 text-trueGray-100 bg-trueSky-500 rounded-md focus:bg-trueSky-600 focus:outline-none"
                         >
                           {isSubmitting ? (
                             <svg
-                              className="w-5 h-5 mx-auto text-white animate-spin"
+                              className="w-5 h-5 mx-auto text-trueGray-100 animate-spin"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -266,14 +267,14 @@ export default function PopupWidget() {
                       >
                         <span>
                           Powered by{" "}
-                          <a
+                          <Link
                             href="https://Web3Forms.com"
                             className="text-trueGray-600"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             Web3Forms
-                          </a>
+                          </Link>
                         </span>
                       </p>
                     </form>
@@ -281,7 +282,7 @@ export default function PopupWidget() {
 
                   {isSubmitSuccessful && isSuccess && (
                     <>
-                      <div className="flex flex-col items-center justify-center h-full text-center text-white rounded-md">
+                      <div className="flex flex-col items-center justify-center h-full text-center text-trueGray-100 rounded-md">
                         <svg
                           width="60"
                           height="60"
@@ -311,7 +312,7 @@ export default function PopupWidget() {
                   )}
 
                   {isSubmitSuccessful && !isSuccess && (
-                    <div className="flex flex-col items-center justify-center h-full text-center text-white rounded-md">
+                    <div className="flex flex-col items-center justify-center h-full text-center text-trueGray-100 rounded-md">
                       <svg
                         width="60"
                         height="60"

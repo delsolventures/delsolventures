@@ -19,21 +19,23 @@ export default function Home() {
       />
 
       <Navbar />
-      <Hero />
-      <SectionTitle
-        pretitle="Our Story"
-        title="Building & investing in rising startups."
-      >
-        We help develop early-stage companies with investment, strategic advice
-        and mentoring to achieve market leadership in sustainable technologies
-        and innovations.
-      </SectionTitle>
+      <main className="home-page h-full mx-auto px-8">
+        <Hero />
+        <SectionTitle
+          pretitle="Our Story"
+          title="Building & investing in rising startups."
+        >
+          We help develop early-stage companies with investment, strategic
+          advice and mentoring to achieve market leadership in sustainable
+          technologies and innovations.
+        </SectionTitle>
 
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        How can an organization or aspiring venturer partner with del SOL?
-      </SectionTitle>
-      <Faq />
-      <Cta />
+        <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
+          How can an organization or aspiring venturer partner with del SOL?
+        </SectionTitle>
+        <Faq />
+        <Cta />
+      </main>
       <PopupWidget />
     </>
   );
