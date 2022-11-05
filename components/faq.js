@@ -1,7 +1,8 @@
 import React from "react";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/solid";
+//import { ChevronUpIcon } from "@heroicons/react/solid";
+import { ChevronUpIcon } from "@heroicons/react/24/solid";
 
 export default function Faq() {
   return (
@@ -37,15 +38,33 @@ const faqdata = [
   {
     question: "How can my company work with del SOL?",
     answer:
-      "We work with start-ups who strive to take on new challenges and can accelerate & execute go-to-market and scaling strategies. "
+      "We work with start-ups who strive to take on new challenges and can accelerate & execute go-to-market and scaling strategies. ",
   },
   {
     question: "Is del SOL hiring?",
-    answer: "Yes we are! Book a meeting with us to discuss new possibilities."
+    answer: "Yes we are! Book a meeting with us to discuss new possibilities.",
   },
   {
     question: "Which industries are del SOL involved in? ",
     answer:
-      "We work in the fields of energy, biotech, aquaculture & agriculture."
-  }
+      "We work in the fields of energy, biotech, aquaculture & agriculture.",
+  },
 ];
+
+function ChevronUpIconSVG() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4.5 15.75l7.5-7.5 7.5 7.5"
+      />
+    </svg>
+  );
+}
