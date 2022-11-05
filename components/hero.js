@@ -25,7 +25,6 @@ export default function Hero() {
               width="600"
               height="600"
               alt="Hero Illustration"
-              layout="intrinsic"
               loading="eager"
             />
           </div>

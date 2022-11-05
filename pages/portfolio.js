@@ -65,7 +65,6 @@ function Card1() {
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-304181b3182265078bad3744c08e8ab6.png"
           height={300}
           width={300}
-          layout="responsive"
           alt="Foodtech"
         />
         <p className="text-trueGray-100 text-md mb-4">
@@ -98,7 +97,6 @@ function Card2() {
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-4dd5fd75c6118b7161fca2ffd991842a.png"
           height={300}
           width={300}
-          layout="responsive"
           alt="Cybersecurity"
         />
         <p className="text-trueGray-100 text-md mb-4">
@@ -131,7 +129,6 @@ function Card3() {
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-5ef96019d86f8e5221c37d9733cb5492.png"
           height={300}
           width={300}
-          layout="responsive"
           alt="Cleantech"
         />
         <p className="text-trueGray-100 text-md mb-4">
@@ -165,7 +162,6 @@ function Card4() {
           height={300}
           width={300}
           alt="Mobility"
-          layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">
           Hybrid EV. <br />
@@ -197,7 +193,6 @@ function Card5() {
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-f701b63cfe38e57fa0408c238af32027.png"
           height={300}
           width={300}
-          layout="responsive"
           alt="Creators"
         />
         <p className="text-trueGray-100 text-md mb-4">
@@ -231,7 +226,6 @@ function Card6() {
           height={300}
           width={300}
           alt="del SOL"
-          layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">
           Discover. <br />
