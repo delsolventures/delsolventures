@@ -55,7 +55,7 @@ export default function Portfolio() {
 
 function Card1() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3  border-b border-trueGray-200">
         Foodtech
       </h5>
@@ -63,14 +63,15 @@ function Card1() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-304181b3182265078bad3744c08e8ab6.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
           layout="responsive"
+          alt="Foodtech"
         />
         <p className="text-trueGray-100 text-md mb-4">
-          Vertical systems. <br />
-          Climate-controlled.. <br />
-          Reduced emissions.
+          Vertical Farm Systems. <br />
+          Climate-Control. <br />
+          Reduced Emissions.
         </p>
       </div>
       <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
@@ -87,7 +88,7 @@ function Card1() {
 
 function Card2() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3  border-b border-trueGray-200">
         Cybersecurity
       </h5>
@@ -95,12 +96,13 @@ function Card2() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-4dd5fd75c6118b7161fca2ffd991842a.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
           layout="responsive"
+          alt="Cybersecurity"
         />
         <p className="text-trueGray-100 text-md mb-4">
-          Digital Identity. <br />
+          Digital Identity Management. <br />
           Data Privacy. <br />
           Privacy Protection Toolkits.
         </p>
@@ -119,7 +121,7 @@ function Card2() {
 
 function Card3() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Cleantech
       </h5>
@@ -127,12 +129,13 @@ function Card3() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-5ef96019d86f8e5221c37d9733cb5492.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
           layout="responsive"
+          alt="Cleantech"
         />
         <p className="text-trueGray-100 text-md mb-4">
-          Offgrid Solutions <br />
+          Offgrid Solutions. <br />
           Solid State Batteries. <br />
           Community Renewal.
         </p>
@@ -151,7 +154,7 @@ function Card3() {
 
 function Card4() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
       <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Mobility
       </h5>
@@ -159,14 +162,15 @@ function Card4() {
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-5af1ef6e7de4a6e775448b69ac0a9851.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
+          alt="Mobility"
           layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">
           Hybrid EV. <br />
           EV Infrastructure. <br />
-          Renewalable Energy. <br />
+          Stored Energy. <br />
         </p>
       </div>
       <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
@@ -183,17 +187,18 @@ function Card4() {
 
 function Card5() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 px-6 border-b border-trueGray-200">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Creators
       </h5>
       <div>
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-f701b63cfe38e57fa0408c238af32027.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
           layout="responsive"
+          alt="Creators"
         />
         <p className="text-trueGray-100 text-md mb-4">
           Create. <br />
@@ -204,7 +209,7 @@ function Card5() {
       <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
         <FontAwesomeIcon
           icon={faPhotoVideo} //"fa-solid fa-pepper-hot"
-          className="text-white pr-2"
+          className="text-trueGray-100 pr-2"
           aria-hidden="true"
         />{" "}
         Content. Partners.
@@ -215,16 +220,17 @@ function Card5() {
 
 function Card6() {
   return (
-    <div className="block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 px-6 border-b border-trueGray-200">
+    <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
+      <h5 className="text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         del SOL
       </h5>
       <div>
         <Image
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
           src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-3c3a259ced051ff05ebf18363560f8a3.png"
-          height="300"
-          width="300"
+          height={300}
+          width={300}
+          alt="del SOL"
           layout="responsive"
         />
         <p className="text-trueGray-100 text-md mb-4">

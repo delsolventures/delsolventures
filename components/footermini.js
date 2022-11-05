@@ -23,12 +23,12 @@ export default function FooterMini() {
             Copyright © {new Date().getFullYear()}.{" "}
             <span className="px-2">
               <Link href="/terms">
-                <a>Terms</a>
+                Terms
               </Link>
             </span>
             <span className="px-2">
               <Link href="/privacy">
-                <a>Privacy</a>
+                Privacy
               </Link>
             </span>
           </p>

@@ -13,14 +13,13 @@ export default function Footer() {
   return (
     <div className="relative px-8 w-full mx-auto pb-2 ">
       <div className="pt-2 text-center text-trueGray-700 dark:text-trueGray-100 border-t border-trueGray-100 dark:border-trueGray-700">
-        <Link href="/">
-          <a className="space-x-2">
+        <Link href="/"a className="space-x-2">
             <span className="px-2 underline text-center text-xl font-semibold ">
               del SOL{" "}
             </span>
             <br />
             <span className="no-underline text-xs">VENTURES INC.</span>
-          </a>
+          
         </Link>
 
         <p>delsolventures@skiff.com</p>

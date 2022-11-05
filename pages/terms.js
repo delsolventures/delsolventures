@@ -12,15 +12,15 @@ export default function Terms() {
         description="Terms del SOL. Early-stage VC in biotech, cleantech, foodtech & mobility."
       />
       <Navbar transparent />
-      <main className="text-trueGray-700">
+      <main className="text-trueGray-700 mx-auto px-8">
         <div className="relative py-8 flex content-center items-center justify-center min-h-screen-75">
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
+               
                   <Text
                     h1
-                    className="uppercase text-white font-semibold text-5xl"
+                    className="uppercase text-trueGray-100 font-semibold text-5xl"
                   >
                     Terms & Conditions
                   </Text>
@@ -30,11 +30,12 @@ export default function Terms() {
                   <Image
                     className="bg-center bg-cover bg-no-repeat"
                     src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png"
-                    height="50"
-                    width="50"
+                    height={200}
+                    width={200}
                     layout="responsive"
+                    alt="Terms"
                   />
-                </div>
+             
               </div>
             </div>
           </div>
@@ -108,7 +109,8 @@ export default function Terms() {
                   title="INTELLECTUAL PROPERTY RIGHTS"
                   expanded
                   color="#f3f4f6"
-                  className="text-trueGray-700"
+
+                  //                  className="text-trueGray-700 bg-trueGray-700"
                 >
                   <Text className="text-trueGray-700">
                     Unless otherwise indicated, the Site and the Marketplace
@@ -239,102 +241,100 @@ export default function Terms() {
                     not be used in connection with any commercial endeavors
                     except those that are specifically endorsed or approved by
                     us. As a user of the Site, you agree not to:
+                    </Text>
                     <ol>
                       <li>
-                        1. Systematically retrieve data or other content from
+                        Systematically retrieve data or other content from
                         the Site to create or compile, directly or indirectly, a
                         collection, compilation, database, or directory without
                         written permission from us.
                       </li>
                       <li>
-                        2. Make any unauthorized use of the Marketplace
+                        Make any unauthorized use of the Marketplace
                         Offerings, including collecting usernames and/or email
                         addresses of users by electronic or other means for the
                         purpose of sending unsolicited email, or creating user
                         accounts by automated means or under false pretenses.
                       </li>
                       <li>
-                        {" "}
-                        3. Use a buying agent or purchasing agent to make
+                        Use a buying agent or purchasing agent to make
                         purchases on the Site.
                       </li>
                       <li>
-                        4. Use the Site to advertise or offer to sell goods and
+                        Use the Site to advertise or offer to sell goods and
                         services.
                       </li>
                       <li>
-                        {" "}
-                        5. Circumvent, disable, or otherwise interfere with
+                        Circumvent, disable, or otherwise interfere with
                         security-related features of the Site, including
                         features that prevent or restrict the use or copying of
                         any Content or enforce limitations on the use of the
                         Site and/or the Content contained therein.
                       </li>
                       <li>
-                        {" "}
-                        6. Engage in unauthorized framing of or linking to the
-                        Site.{" "}
+                        Engage in unauthorized framing of or linking to the
+                        Site.
                       </li>
                       <li>
-                        7. Trick, defraud, or mislead us and other users,
+                        Trick, defraud, or mislead us and other users,
                         especially in any attempt to learn sensitive account
                         information such as user passwords.{" "}
                       </li>
                       <li>
-                        8. Make improper use of our support services or submit
+                        Make improper use of our support services or submit
                         false reports of abuse or misconduct.
                       </li>
                       <li>
-                        9. Engage in any automated use of the system, such as
+                        Engage in any automated use of the system, such as
                         using scripts to send comments or messages, or using any
                         data mining, robots, or similar data gathering and
                         extraction tools.{" "}
                       </li>
                       <li>
-                        10. Interfere with, disrupt, or create an undue burden
+                        Interfere with, disrupt, or create an undue burden
                         on the Site or the networks or services connected to the
                         Site.{" "}
                       </li>
                       <li>
-                        11. Attempt to impersonate another user or person or use
+                        Attempt to impersonate another user or person or use
                         the username of another user.{" "}
                       </li>
-                      <li>12. Sell or otherwise transfer your profile.</li>
+                      <li>Sell or otherwise transfer your profile.</li>
                       <li>
-                        13. Use any information obtained from the Site in order
+                        Use any information obtained from the Site in order
                         to harass, abuse, or harm another person.{" "}
                       </li>
                       <li>
-                        14. Use the Marketplace Offerings as part of any effort
+                        Use the Marketplace Offerings as part of any effort
                         to compete with us or otherwise use the Site and/or the
                         Content for any revenue-generating endeavor or
                         commercial enterprise.{" "}
                       </li>
                       <li>
-                        15. Decipher, decompile, disassemble, or reverse
+                        Decipher, decompile, disassemble, or reverse
                         engineer any of the software comprising or in any way
                         making up a part of the Site.{" "}
                       </li>
                       <li>
-                        16. Attempt to bypass any measures of the Site designed
+                        Attempt to bypass any measures of the Site designed
                         to prevent or restrict access to the Site, or any
                         portion of the Site.{" "}
                       </li>
                       <li>
-                        17. Harass, annoy, intimidate, or threaten any of our
+                        Harass, annoy, intimidate, or threaten any of our
                         employees or agents engaged in providing any portion of
                         the Marketplace Offerings to you.
                       </li>
                       <li>
-                        18. Delete the copyright or other proprietary rights
+                        Delete the copyright or other proprietary rights
                         notice from any Content.{" "}
                       </li>
                       <li>
-                        19. Copy or adapt the Site’s software, including but not
+                        Copy or adapt the Site’s software, including but not
                         limited to Flash, PHP, HTML, JavaScript, or other code.{" "}
                       </li>
                       <li>
-                        20. Upload or transmit (or attempt to upload or to
+                        Upload or transmit (or attempt to upload or to
                         transmit) viruses, Trojan horses, or other material,
                         including excessive use of capital letters and spamming
                         (continuous posting of repetitive text), that interferes
@@ -344,7 +344,7 @@ export default function Terms() {
                         or maintenance of the Marketplace Offerings.
                       </li>
                       <li>
-                        21. Upload or transmit (or attempt to upload or to
+                        Upload or transmit (or attempt to upload or to
                         transmit) any material that acts as a passive or active
                         information collection or transmission mechanism,
                         including without limitation, clear graphics interchange
@@ -353,7 +353,7 @@ export default function Terms() {
                         “spyware” or “passive collection mechanisms” or “pcms”).{" "}
                       </li>
                       <li>
-                        22. Except as may be the result of standard search
+                        Except as may be the result of standard search
                         engine or Internet browser usage, use, launch, develop,
                         or distribute any automated system, including without
                         limitation, any spider, robot, cheat utility, scraper,
@@ -361,15 +361,14 @@ export default function Terms() {
                         launching any unauthorized script or other software.{" "}
                       </li>
                       <li>
-                        23. Disparage, tarnish, or otherwise harm, in our
+                        Disparage, tarnish, or otherwise harm, in our
                         opinion, us and/or the Site.{" "}
                       </li>
                       <li>
-                        24. Use the Site in a manner inconsistent with any
+                        Use the Site in a manner inconsistent with any
                         applicable laws or regulations.
                       </li>
                     </ol>
-                  </Text>
                 </Collapse>
 
                 <Collapse title="USER GENERATED CONTRIBUTIONS">
@@ -387,9 +386,10 @@ export default function Terms() {
                     with the Site Privacy Policy. When you create or make
                     available any Contributions, you thereby represent and
                     warrant that:
+                    </Text>
                     <ol>
                       <li>
-                        1. The creation, distribution, transmission, public
+                        The creation, distribution, transmission, public
                         display, or performance, and the accessing, downloading,
                         or copying of your Contributions do not and will not
                         infringe the proprietary rights, including but not
@@ -397,14 +397,14 @@ export default function Terms() {
                         secret, or moral rights of any third party.
                       </li>
                       <li>
-                        2. You are the creator and owner of or have the
+                        You are the creator and owner of or have the
                         necessary licenses, rights, consents, releases, and
                         permissions to use and to authorize us, the Site, and
                         other users of the Site to use your Contributions in any
                         manner contemplated by the Site and these Terms of Use.
                       </li>
                       <li>
-                        3. You have the written consent, release, and/or
+                        You have the written consent, release, and/or
                         permission of each and every identifiable individual
                         person in your Contributions to use the name or likeness
                         of each and every such identifiable individual person to
@@ -412,56 +412,56 @@ export default function Terms() {
                         manner contemplated by the Site and these Terms of Use.
                       </li>
                       <li>
-                        4. Your Contributions are not false, inaccurate, or
+                        Your Contributions are not false, inaccurate, or
                         misleading.
                       </li>
                       <li>
-                        5. Your Contributions are not unsolicited or
+                        Your Contributions are not unsolicited or
                         unauthorized advertising, promotional materials, pyramid
                         schemes, chain letters, spam, mass mailings, or other
                         forms of solicitation.
                       </li>
                       <li>
-                        6. Your Contributions are not obscene, lewd, lascivious,
+                        Your Contributions are not obscene, lewd, lascivious,
                         filthy, violent, harassing, libelous, slanderous, or
                         otherwise objectionable (as determined by us).
                       </li>
                       <li>
-                        7. Your Contributions do not ridicule, mock, disparage,
+                        Your Contributions do not ridicule, mock, disparage,
                         intimidate, or abuse anyone.
                       </li>
                       <li>
-                        8. Your Contributions are not used to harass or threaten
+                        Your Contributions are not used to harass or threaten
                         (in the legal sense of those terms) any other person and
                         to promote violence against a specific person or class
                         of people.
                       </li>
                       <li>
-                        9. Your Contributions do not violate any applicable law,
+                        Your Contributions do not violate any applicable law,
                         regulation, or rule.
                       </li>
                       <li>
-                        10. Your Contributions do not violate the privacy or
+                        Your Contributions do not violate the privacy or
                         publicity rights of any third party.
                       </li>
                       <li>
-                        11. Your Contributions do not contain any material that
+                        Your Contributions do not contain any material that
                         solicits personal information from anyone under the age
                         of 18 or exploits people under the age of 18 in a sexual
                         or violent manner.
                       </li>
                       <li>
-                        12. Your Contributions do not violate any applicable law
+                        Your Contributions do not violate any applicable law
                         concerning child pornography, or otherwise intended to
                         protect the health or well-being of minors.
                       </li>
                       <li>
-                        13. Your Contributions do not include any offensive
+                        Your Contributions do not include any offensive
                         comments that are connected to race, national origin,
                         gender, sexual preference, or physical handicap.
                       </li>
                       <li>
-                        14. Your Contributions do not otherwise violate, or link
+                        Your Contributions do not otherwise violate, or link
                         to material that violates, any provision of these Terms
                         of Use, or any applicable law or regulation. Any use of
                         the Site or the Marketplace Offerings in violation of
@@ -471,7 +471,6 @@ export default function Terms() {
                         Offerings.
                       </li>
                     </ol>
-                  </Text>
                 </Collapse>
 
                 <Collapse title="CONTRIBUTION LICENSE">
