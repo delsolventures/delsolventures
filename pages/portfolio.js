@@ -56,7 +56,7 @@ export default function Portfolio() {
 function Card1() {
   return (
     <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3  border-b border-trueGray-200">
+      <h5 className="uppercase text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3  border-b border-trueGray-200">
         Foodtech
       </h5>
       <div>
@@ -74,7 +74,7 @@ function Card1() {
           Reduced Emissions.
         </p>
       </div>
-      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
+      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-100">
         <FontAwesomeIcon
           icon={faPepperHot} //"fa-solid fa-pepper-hot"
           className="text-red-700 dark:text-red-400 pr-2"
@@ -89,7 +89,7 @@ function Card1() {
 function Card2() {
   return (
     <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3  border-b border-trueGray-200">
+      <h5 className="uppercase text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3  border-b border-trueGray-200">
         Cybersecurity
       </h5>
       <div>
@@ -107,7 +107,7 @@ function Card2() {
           Privacy Protection Toolkits.
         </p>
       </div>
-      <div className="border-t border-trueGray-200 py-3  w-full text-sm text-trueGray-700 dark:text-trueGray-100">
+      <div className="border-t border-trueGray-200 py-3  w-full text-sm text-trueGray-100">
         <FontAwesomeIcon
           icon={faShieldCat} //"fa-solid fa-pepper-hot"
           className="text-trueSky-700 dark:text-trueSky-400 pr-2"
@@ -122,7 +122,7 @@ function Card2() {
 function Card3() {
   return (
     <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
+      <h5 className="uppercase text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Cleantech
       </h5>
       <div>
@@ -140,7 +140,7 @@ function Card3() {
           Community Renewal.
         </p>
       </div>
-      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
+      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-100">
         <FontAwesomeIcon
           icon={faSeedling} //"fa-solid fa-pepper-hot"
           className="text-green-700 dark:text-green-400 pr-2"
@@ -155,7 +155,7 @@ function Card3() {
 function Card4() {
   return (
     <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
+      <h5 className="uppercase text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Mobility
       </h5>
       <div>
@@ -173,7 +173,7 @@ function Card4() {
           Stored Energy. <br />
         </p>
       </div>
-      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
+      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-100">
         <FontAwesomeIcon
           icon={faChargingStation} //"fa-solid fa-pepper-hot"
           className="text-purple-700 dark:text-purple-400 pr-2"
@@ -188,7 +188,7 @@ function Card4() {
 function Card5() {
   return (
     <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="uppercase text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
+      <h5 className="uppercase text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         Creators
       </h5>
       <div>
@@ -206,7 +206,7 @@ function Card5() {
           Influence. <br />
         </p>
       </div>
-      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
+      <div className="border-t border-trueGray-200 py-3 w-full text-trueGray-100">
         <FontAwesomeIcon
           icon={faPhotoVideo} //"fa-solid fa-pepper-hot"
           className="text-trueGray-100 pr-2"
@@ -221,7 +221,7 @@ function Card5() {
 function Card6() {
   return (
     <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
-      <h5 className="text-trueGray-700 dark:text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
+      <h5 className="text-trueGray-100 text-xl leading-tight font-medium mb-2 py-3 border-b border-trueGray-200">
         del SOL
       </h5>
       <div>
@@ -239,7 +239,7 @@ function Card6() {
           Explore. <br />
         </p>
       </div>
-      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-700 dark:text-trueGray-100">
+      <div className="border-t border-trueGray-200 py-3 w-full text-sm text-trueGray-100">
         <FontAwesomeIcon
           icon={faSun} //"fa-solid fa-pepper-hot"
           className="text-yellow-700 dark:text-yellow-400 pr-2"
