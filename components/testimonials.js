@@ -12,9 +12,9 @@ export default function Testimonials() {
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-trueGray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+            <p className="text-2xl leading-normal">
+              Share a real testimonial that hits some of your benefits from one
+              of your popular customer.
             </p>
 
             <Avatar
@@ -26,9 +26,9 @@ export default function Testimonials() {
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-trueGray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+            <p className="text-2xl leading-normal">
+              Make sure you only pick the right sentence to keep it short and
+              simple.
             </p>
 
             <Avatar
@@ -40,9 +40,9 @@ export default function Testimonials() {
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-trueGray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I've seen. I
-              would use this for anything.
+            <p className="text-2xl leading-normal">
+              This is an awesome landing page template I&apos;ve seen. I would
+              use this for anything.
             </p>
 
             <Avatar
@@ -66,7 +66,6 @@ function Avatar(props) {
           width="40"
           height="40"
           alt="Avatar"
-          
           placeholder="blur"
         />
       </div>
@@ -83,10 +82,9 @@ function Avatar(props) {
 function Mark(props) {
   return (
     <>
-      {" "}
       <mark className="text-trueGray-800 bg-trueSky-100 rounded-md ring-trueSky-100 ring-4 dark:ring-trueSky-900 dark:bg-trueSky-900 dark:text-trueSky-200">
         {props.children}
-      </mark>{" "}
+      </mark>
     </>
   );
 }

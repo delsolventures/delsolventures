@@ -7,7 +7,7 @@ export default function Privacy_CCPA() {
     //{ name: "Collected", uid: "status" },
     //{ name: "ACTIONS", uid: "actions" },
     //{ name: "Example", uid: "example" },
-    { name: "Collected", uid: "collected" }
+    { name: "Collected", uid: "collected" },
   ];
   const ccpa = [
     {
@@ -15,47 +15,47 @@ export default function Privacy_CCPA() {
       category: "A. Identifiers",
       example:
         "Contact details, such as real name, alias, postal  address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address and account name",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 2,
       category: "B. Personal information",
       example:
         "Categories listed in the California Customer Records statute: Name, contact information, education, employment, employment history and financial information",
-      collected: "YES"
+      collected: "YES",
     },
     {
       id: 3,
       category: "C. Protected classification",
       example:
         "Characteristics under California or federal law: Gender and date of birth",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 4,
       category: "D. Commercial information",
       example:
         "Transaction information, purchase history, financial details and payment information",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 5,
       category: "E. Biometric information",
       example: "Fingerprints and voiceprints",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 6,
       category: "F. Internet or other similar network activity",
       example:
         "Browsing history, search history, online behavior, interest data, and interactions with our and other websites, applications, systems and advertisements",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 7,
       category: "G. Geolocation data",
       example: "Device location",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 8,
@@ -63,28 +63,28 @@ export default function Privacy_CCPA() {
         "H. Audio, electronic, visual, thermal, olfactory, or similar information",
       example:
         "Images and audio, video or call recordings created in connection with our business activities",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 9,
       category: "I. Professional or employment-related information",
       example:
         "Business contact details in order to provide you our services at a business level, job title as well as work history and professional qualifications if you apply for a job with us",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 10,
       category: "J. Education Information",
       example: "Student records and directory information",
-      collected: "NO"
+      collected: "NO",
     },
     {
       id: 11,
       category: "K. Inferences drawn from other personal information",
       example:
         "Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual’s preferences and characteristics",
-      collected: "NO"
-    }
+      collected: "NO",
+    },
   ];
   const renderCell = (ccpa, columnKey) => {
     const cellValue = ccpa[columnKey];
@@ -96,6 +96,7 @@ export default function Privacy_CCPA() {
               <Text
                 category={cellValue}
                 css={{ maxWidth: "80%" }}
+                size="$xs"
                 wrap="flex-wrap"
               >
                 {ccpa.category}
@@ -123,7 +124,7 @@ export default function Privacy_CCPA() {
       aria-label="Privacy CCPA"
       css={{
         height: "auto",
-        width: "auto"
+        width: "auto",
       }}
       selectionMode="none"
     >
@@ -136,6 +137,7 @@ export default function Privacy_CCPA() {
             //align={column.uid === "actions" ? "center" : "start"}
             wrap={column.uid === "category" ? "flex-wrap" : "start"}
             css={{ p: 0, wrap: "Wrap", fluid: "true" }}
+            size="$xs"
           >
             {column.name}
           </Table.Column>
@@ -143,9 +145,9 @@ export default function Privacy_CCPA() {
       </Table.Header>
       <Table.Body items={ccpa}>
         {(item) => (
-          <Table.Row key={item.index} wrap="flex-wrap">
+          <Table.Row key={item.index} wrap="flex-wrap" size="$xs">
             {(columnKey) => (
-              <Table.Cell wrap="flex-wrap">
+              <Table.Cell wrap="flex-wrap" size="$xs">
                 {renderCell(item, columnKey)}
               </Table.Cell>
             )}

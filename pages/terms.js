@@ -17,25 +17,20 @@ export default function Terms() {
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-               
-                  <Text
-                    h1
-                    className="uppercase text-trueGray-100 font-semibold text-5xl"
-                  >
-                    Terms & Conditions
-                  </Text>
-                  <Text className="mt-4 text-lg text-trueGray-200">
-                    Last Updated 1 Jan {new Date().getFullYear()}
-                  </Text>
-                  <Image
-                    className="bg-center bg-cover bg-no-repeat"
-                    src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png"
-                    height={200}
-                    width={200}
-                    
-                    alt="Terms"
-                  />
-             
+                <div className="h1 uppercase text-trueGray-700 dark:text-trueGray-100 font-semibold text-5xl">
+                  Terms & Conditions
+                </div>
+                <div className="mt-4 text-lg text-trueGray-700 dark:text-trueGray-100">
+                  Last Updated 1 Jan {new Date().getFullYear()}
+                </div>
+                <Image
+                  className="relative block mx-auto px-8"
+                  src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png"
+                  height={500}
+                  width={500}
+                  objectFit="fill"
+                  alt="Terms"
+                />
               </div>
             </div>
           </div>
@@ -45,13 +40,16 @@ export default function Terms() {
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full  ml-auto mr-auto px-4">
-                <Text h2 className="uppercase text-2xl ">
+                <div
+                  h2
+                  className="uppercase text-2xl text-trueGray-700 dark:text-trueGray-100"
+                >
                   Terms & Conditions Notice
-                </Text>
-                <Text className="mt-4 text-lg text-trueGray-200">
+                </div>
+                <div className="mt-4 text-lg text-trueGray-700 dark:text-trueGray-100">
                   Last Updated 1 Jan {new Date().getFullYear()}
-                </Text>
-                <Text>
+                </div>
+                <div className="text-sm text-trueGray-700">
                   These Terms of Use constitute a legally binding agreement made
                   between you, whether personally or on behalf of an entity
                   (“you”) and del SOL VENTURES INC, doing business as del SOL
@@ -102,7 +100,7 @@ export default function Terms() {
                   intended for users who are at least 18 years old. Persons
                   under the age of 18 are not permitted to use or register for
                   the Site or use the Marketplace Offerings.
-                </Text>
+                </div>
               </div>
               <Collapse.Group splitted className="text-trueGray-700">
                 <Collapse
@@ -112,7 +110,7 @@ export default function Terms() {
 
                   //                  className="text-trueGray-700 bg-trueGray-700"
                 >
-                  <Text className="text-trueGray-700">
+                  <div className="text-sm text-trueGray-700">
                     Unless otherwise indicated, the Site and the Marketplace
                     Offerings are our proprietary property and all source code,
                     databases, functionality, software, website designs, audio,
@@ -124,8 +122,8 @@ export default function Terms() {
                     property rights and unfair competition laws of the United
                     States, international copyright laws, and international
                     conventions.
-                  </Text>
-                  <Text className="text-trueGray-700">
+                  </div>
+                  <div className="text-sm text-trueGray-700">
                     The Content and the Marks are provided on the Site “AS IS”
                     for your information and personal use only. Except as
                     expressly provided in these Terms of Use, no part of the
@@ -141,13 +139,13 @@ export default function Terms() {
                     gained access solely for your personal, non-commercial use.
                     We reserve all rights not expressly granted to you in and to
                     the Site, the Content and the Marks.
-                  </Text>
+                  </div>
                 </Collapse>
                 <Collapse
                   title="USER REPRESENTATIONS"
                   className="text-trueGray-700"
                 >
-                  <Text className="text-trueGray-700">
+                  <div className="text-sm text-trueGray-700">
                     By using the Site or the Marketplace Offerings, you
                     represent and warrant that: (1) you have the legal capacity
                     and you agree to comply with these Terms of Use; (2) you are
@@ -183,10 +181,10 @@ export default function Terms() {
                     the Site’s content. We do not endorse or recommend any
                     Marketplace Offerings and the Site is provided for
                     informational and advertising purposes only.
-                  </Text>
+                  </div>
                 </Collapse>
                 <Collapse title="MARKETPLACE OFFERINGS">
-                  <Text>
+                  <div className="text-sm">
                     We reserve the right to limit the quantities of the
                     Marketplace Offerings offered or available on the Site. All
                     descriptions or pricing of the Marketplace Offerings are
@@ -196,14 +194,14 @@ export default function Terms() {
                     warrant that the quality of any of the Marketplace Offerings
                     purchased by you will meet your expectations or that any
                     errors in the Site will be corrected.
-                  </Text>
+                  </div>
                 </Collapse>
                 <Collapse title="PURCHASES AND PAYMENT">
-                  <Text>
+                  <div className="text-sm">
                     We accept the following forms of payment: Crypto-Currency
                     Bank Wire Transfer Visa Mastercard
-                  </Text>
-                  <Text>
+                  </div>
+                  <div className="text-sm">
                     You agree to provide current, complete, and accurate
                     purchase and account information for all purchases of the
                     Marketplace Offerings made via the Site. You further agree
@@ -227,152 +225,154 @@ export default function Terms() {
                     same billing or shipping address. We reserve the right to
                     limit or prohibit orders that, in our sole judgment, appear
                     to be placed by dealers, resellers, or distributors.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="REFUNDS POLICY">
-                  <Text>All sales are final and no refund will be issued.</Text>
+                  <div className="text-sm">
+                    All sales are final and no refund will be issued.
+                  </div>
                 </Collapse>
 
                 <Collapse title="PROHIBITED ACTIVITIES">
-                  <Text>
+                  <div className="text-sm">
                     You may not access or use the Site for any purpose other
                     than that for which we make the Site available. The Site may
                     not be used in connection with any commercial endeavors
                     except those that are specifically endorsed or approved by
                     us. As a user of the Site, you agree not to:
-                    </Text>
-                    <ol>
-                      <li>
-                        Systematically retrieve data or other content from
-                        the Site to create or compile, directly or indirectly, a
-                        collection, compilation, database, or directory without
-                        written permission from us.
-                      </li>
-                      <li>
-                        Make any unauthorized use of the Marketplace
-                        Offerings, including collecting usernames and/or email
-                        addresses of users by electronic or other means for the
-                        purpose of sending unsolicited email, or creating user
-                        accounts by automated means or under false pretenses.
-                      </li>
-                      <li>
-                        Use a buying agent or purchasing agent to make
-                        purchases on the Site.
-                      </li>
-                      <li>
-                        Use the Site to advertise or offer to sell goods and
-                        services.
-                      </li>
-                      <li>
-                        Circumvent, disable, or otherwise interfere with
-                        security-related features of the Site, including
-                        features that prevent or restrict the use or copying of
-                        any Content or enforce limitations on the use of the
-                        Site and/or the Content contained therein.
-                      </li>
-                      <li>
-                        Engage in unauthorized framing of or linking to the
-                        Site.
-                      </li>
-                      <li>
-                        Trick, defraud, or mislead us and other users,
-                        especially in any attempt to learn sensitive account
-                        information such as user passwords.{" "}
-                      </li>
-                      <li>
-                        Make improper use of our support services or submit
-                        false reports of abuse or misconduct.
-                      </li>
-                      <li>
-                        Engage in any automated use of the system, such as
-                        using scripts to send comments or messages, or using any
-                        data mining, robots, or similar data gathering and
-                        extraction tools.{" "}
-                      </li>
-                      <li>
-                        Interfere with, disrupt, or create an undue burden
-                        on the Site or the networks or services connected to the
-                        Site.{" "}
-                      </li>
-                      <li>
-                        Attempt to impersonate another user or person or use
-                        the username of another user.{" "}
-                      </li>
-                      <li>Sell or otherwise transfer your profile.</li>
-                      <li>
-                        Use any information obtained from the Site in order
-                        to harass, abuse, or harm another person.{" "}
-                      </li>
-                      <li>
-                        Use the Marketplace Offerings as part of any effort
-                        to compete with us or otherwise use the Site and/or the
-                        Content for any revenue-generating endeavor or
-                        commercial enterprise.{" "}
-                      </li>
-                      <li>
-                        Decipher, decompile, disassemble, or reverse
-                        engineer any of the software comprising or in any way
-                        making up a part of the Site.{" "}
-                      </li>
-                      <li>
-                        Attempt to bypass any measures of the Site designed
-                        to prevent or restrict access to the Site, or any
-                        portion of the Site.{" "}
-                      </li>
-                      <li>
-                        Harass, annoy, intimidate, or threaten any of our
-                        employees or agents engaged in providing any portion of
-                        the Marketplace Offerings to you.
-                      </li>
-                      <li>
-                        Delete the copyright or other proprietary rights
-                        notice from any Content.{" "}
-                      </li>
-                      <li>
-                        Copy or adapt the Site’s software, including but not
-                        limited to Flash, PHP, HTML, JavaScript, or other code.{" "}
-                      </li>
-                      <li>
-                        Upload or transmit (or attempt to upload or to
-                        transmit) viruses, Trojan horses, or other material,
-                        including excessive use of capital letters and spamming
-                        (continuous posting of repetitive text), that interferes
-                        with any party’s uninterrupted use and enjoyment of the
-                        Site or modifies, impairs, disrupts, alters, or
-                        interferes with the use, features, functions, operation,
-                        or maintenance of the Marketplace Offerings.
-                      </li>
-                      <li>
-                        Upload or transmit (or attempt to upload or to
-                        transmit) any material that acts as a passive or active
-                        information collection or transmission mechanism,
-                        including without limitation, clear graphics interchange
-                        formats (“gifs”), 1×1 pixels, web bugs, cookies, or
-                        other similar devices (sometimes referred to as
-                        “spyware” or “passive collection mechanisms” or “pcms”).{" "}
-                      </li>
-                      <li>
-                        Except as may be the result of standard search
-                        engine or Internet browser usage, use, launch, develop,
-                        or distribute any automated system, including without
-                        limitation, any spider, robot, cheat utility, scraper,
-                        or offline reader that accesses the Site, or using or
-                        launching any unauthorized script or other software.{" "}
-                      </li>
-                      <li>
-                        Disparage, tarnish, or otherwise harm, in our
-                        opinion, us and/or the Site.{" "}
-                      </li>
-                      <li>
-                        Use the Site in a manner inconsistent with any
-                        applicable laws or regulations.
-                      </li>
-                    </ol>
+                  </div>
+                  <ol className="list-decimal list-inside pl-4 text-sm">
+                    <li className="text-sm">
+                      Systematically retrieve data or other content from the
+                      Site to create or compile, directly or indirectly, a
+                      collection, compilation, database, or directory without
+                      written permission from us.
+                    </li>
+                    <li className="text-sm">
+                      Make any unauthorized use of the Marketplace Offerings,
+                      including collecting usernames and/or email addresses of
+                      users by electronic or other means for the purpose of
+                      sending unsolicited email, or creating user accounts by
+                      automated means or under false pretenses.
+                    </li>
+                    <li className="text-sm">
+                      Use a buying agent or purchasing agent to make purchases
+                      on the Site.
+                    </li>
+                    <li className="text-sm">
+                      Use the Site to advertise or offer to sell goods and
+                      services.
+                    </li>
+                    <li className="text-sm">
+                      Circumvent, disable, or otherwise interfere with
+                      security-related features of the Site, including features
+                      that prevent or restrict the use or copying of any Content
+                      or enforce limitations on the use of the Site and/or the
+                      Content contained therein.
+                    </li>
+                    <li className="text-sm">
+                      Engage in unauthorized framing of or linking to the Site.
+                    </li>
+                    <li className="text-sm">
+                      Trick, defraud, or mislead us and other users, especially
+                      in any attempt to learn sensitive account information such
+                      as user passwords.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Make improper use of our support services or submit false
+                      reports of abuse or misconduct.
+                    </li>
+                    <li className="text-sm">
+                      Engage in any automated use of the system, such as using
+                      scripts to send comments or messages, or using any data
+                      mining, robots, or similar data gathering and extraction
+                      tools.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Interfere with, disrupt, or create an undue burden on the
+                      Site or the networks or services connected to the Site.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Attempt to impersonate another user or person or use the
+                      username of another user.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Sell or otherwise transfer your profile.
+                    </li>
+                    <li className="text-sm">
+                      Use any information obtained from the Site in order to
+                      harass, abuse, or harm another person.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Use the Marketplace Offerings as part of any effort to
+                      compete with us or otherwise use the Site and/or the
+                      Content for any revenue-generating endeavor or commercial
+                      enterprise.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Decipher, decompile, disassemble, or reverse engineer any
+                      of the software comprising or in any way making up a part
+                      of the Site.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Attempt to bypass any measures of the Site designed to
+                      prevent or restrict access to the Site, or any portion of
+                      the Site.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Harass, annoy, intimidate, or threaten any of our
+                      employees or agents engaged in providing any portion of
+                      the Marketplace Offerings to you.
+                    </li>
+                    <li className="text-sm">
+                      Delete the copyright or other proprietary rights notice
+                      from any Content.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Copy or adapt the Site’s software, including but not
+                      limited to Flash, PHP, HTML, JavaScript, or other code.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Upload or transmit (or attempt to upload or to transmit)
+                      viruses, Trojan horses, or other material, including
+                      excessive use of capital letters and spamming (continuous
+                      posting of repetitive text), that interferes with any
+                      party’s uninterrupted use and enjoyment of the Site or
+                      modifies, impairs, disrupts, alters, or interferes with
+                      the use, features, functions, operation, or maintenance of
+                      the Marketplace Offerings.
+                    </li>
+                    <li className="text-sm">
+                      Upload or transmit (or attempt to upload or to transmit)
+                      any material that acts as a passive or active information
+                      collection or transmission mechanism, including without
+                      limitation, clear graphics interchange formats (“gifs”),
+                      1×1 pixels, web bugs, cookies, or other similar devices
+                      (sometimes referred to as “spyware” or “passive collection
+                      mechanisms” or “pcms”).{" "}
+                    </li>
+                    <li className="text-sm">
+                      Except as may be the result of standard search engine or
+                      Internet browser usage, use, launch, develop, or
+                      distribute any automated system, including without
+                      limitation, any spider, robot, cheat utility, scraper, or
+                      offline reader that accesses the Site, or using or
+                      launching any unauthorized script or other software.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Disparage, tarnish, or otherwise harm, in our opinion, us
+                      and/or the Site.{" "}
+                    </li>
+                    <li className="text-sm">
+                      Use the Site in a manner inconsistent with any applicable
+                      laws or regulations.
+                    </li>
+                  </ol>
                 </Collapse>
 
                 <Collapse title="USER GENERATED CONTRIBUTIONS">
-                  <Text>
+                  <div className="text-sm">
                     The Site does not offer users to submit or post content. We
                     may provide you with the opportunity to create, submit,
                     post, display, transmit, perform, publish, distribute, or
@@ -386,95 +386,94 @@ export default function Terms() {
                     with the Site Privacy Policy. When you create or make
                     available any Contributions, you thereby represent and
                     warrant that:
-                    </Text>
-                    <ol>
-                      <li>
-                        The creation, distribution, transmission, public
-                        display, or performance, and the accessing, downloading,
-                        or copying of your Contributions do not and will not
-                        infringe the proprietary rights, including but not
-                        limited to the copyright, patent, trademark, trade
-                        secret, or moral rights of any third party.
-                      </li>
-                      <li>
-                        You are the creator and owner of or have the
-                        necessary licenses, rights, consents, releases, and
-                        permissions to use and to authorize us, the Site, and
-                        other users of the Site to use your Contributions in any
-                        manner contemplated by the Site and these Terms of Use.
-                      </li>
-                      <li>
-                        You have the written consent, release, and/or
-                        permission of each and every identifiable individual
-                        person in your Contributions to use the name or likeness
-                        of each and every such identifiable individual person to
-                        enable inclusion and use of your Contributions in any
-                        manner contemplated by the Site and these Terms of Use.
-                      </li>
-                      <li>
-                        Your Contributions are not false, inaccurate, or
-                        misleading.
-                      </li>
-                      <li>
-                        Your Contributions are not unsolicited or
-                        unauthorized advertising, promotional materials, pyramid
-                        schemes, chain letters, spam, mass mailings, or other
-                        forms of solicitation.
-                      </li>
-                      <li>
-                        Your Contributions are not obscene, lewd, lascivious,
-                        filthy, violent, harassing, libelous, slanderous, or
-                        otherwise objectionable (as determined by us).
-                      </li>
-                      <li>
-                        Your Contributions do not ridicule, mock, disparage,
-                        intimidate, or abuse anyone.
-                      </li>
-                      <li>
-                        Your Contributions are not used to harass or threaten
-                        (in the legal sense of those terms) any other person and
-                        to promote violence against a specific person or class
-                        of people.
-                      </li>
-                      <li>
-                        Your Contributions do not violate any applicable law,
-                        regulation, or rule.
-                      </li>
-                      <li>
-                        Your Contributions do not violate the privacy or
-                        publicity rights of any third party.
-                      </li>
-                      <li>
-                        Your Contributions do not contain any material that
-                        solicits personal information from anyone under the age
-                        of 18 or exploits people under the age of 18 in a sexual
-                        or violent manner.
-                      </li>
-                      <li>
-                        Your Contributions do not violate any applicable law
-                        concerning child pornography, or otherwise intended to
-                        protect the health or well-being of minors.
-                      </li>
-                      <li>
-                        Your Contributions do not include any offensive
-                        comments that are connected to race, national origin,
-                        gender, sexual preference, or physical handicap.
-                      </li>
-                      <li>
-                        Your Contributions do not otherwise violate, or link
-                        to material that violates, any provision of these Terms
-                        of Use, or any applicable law or regulation. Any use of
-                        the Site or the Marketplace Offerings in violation of
-                        the foregoing violates these Terms of Use and may result
-                        in, among other things, termination or suspension of
-                        your rights to use the Site and the Marketplace
-                        Offerings.
-                      </li>
-                    </ol>
+                  </div>
+                  <ol>
+                    <li className="text-sm">
+                      The creation, distribution, transmission, public display,
+                      or performance, and the accessing, downloading, or copying
+                      of your Contributions do not and will not infringe the
+                      proprietary rights, including but not limited to the
+                      copyright, patent, trademark, trade secret, or moral
+                      rights of any third party.
+                    </li>
+                    <li className="text-sm">
+                      You are the creator and owner of or have the necessary
+                      licenses, rights, consents, releases, and permissions to
+                      use and to authorize us, the Site, and other users of the
+                      Site to use your Contributions in any manner contemplated
+                      by the Site and these Terms of Use.
+                    </li>
+                    <li className="text-sm">
+                      You have the written consent, release, and/or permission
+                      of each and every identifiable individual person in your
+                      Contributions to use the name or likeness of each and
+                      every such identifiable individual person to enable
+                      inclusion and use of your Contributions in any manner
+                      contemplated by the Site and these Terms of Use.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions are not false, inaccurate, or
+                      misleading.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions are not unsolicited or unauthorized
+                      advertising, promotional materials, pyramid schemes, chain
+                      letters, spam, mass mailings, or other forms of
+                      solicitation.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions are not obscene, lewd, lascivious,
+                      filthy, violent, harassing, libelous, slanderous, or
+                      otherwise objectionable (as determined by us).
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions do not ridicule, mock, disparage,
+                      intimidate, or abuse anyone.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions are not used to harass or threaten (in
+                      the legal sense of those terms) any other person and to
+                      promote violence against a specific person or class of
+                      people.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions do not violate any applicable law,
+                      regulation, or rule.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions do not violate the privacy or publicity
+                      rights of any third party.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions do not contain any material that
+                      solicits personal information from anyone under the age of
+                      18 or exploits people under the age of 18 in a sexual or
+                      violent manner.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions do not violate any applicable law
+                      concerning child pornography, or otherwise intended to
+                      protect the health or well-being of minors.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions do not include any offensive comments
+                      that are connected to race, national origin, gender,
+                      sexual preference, or physical handicap.
+                    </li>
+                    <li className="text-sm">
+                      Your Contributions do not otherwise violate, or link to
+                      material that violates, any provision of these Terms of
+                      Use, or any applicable law or regulation. Any use of the
+                      Site or the Marketplace Offerings in violation of the
+                      foregoing violates these Terms of Use and may result in,
+                      among other things, termination or suspension of your
+                      rights to use the Site and the Marketplace Offerings.
+                    </li>
+                  </ol>
                 </Collapse>
 
                 <Collapse title="CONTRIBUTION LICENSE">
-                  <Text>
+                  <div className="text-sm">
                     You and the Site agree that we may access, store, process,
                     and use any information and personal data that you provide
                     following the terms of the Privacy Policy and your choices
@@ -491,10 +490,10 @@ export default function Terms() {
                     expressly agree to exonerate us from any and all
                     responsibility and to refrain from any legal action against
                     us regarding your Contributions.
-                  </Text>
+                  </div>
                 </Collapse>
                 <Collapse title="SOCIAL MEDIA">
-                  <Text>
+                  <div className="text-sm">
                     As part of the functionality of the Site, you may link your
                     account with online accounts you have with third-party
                     service providers (each such account, a “Third-Party
@@ -550,11 +549,11 @@ export default function Terms() {
                     was obtained through such Third-Party Account, except the
                     username and profile picture that become associated with
                     your account.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="SUBMISSIONS">
-                  <Text>
+                  <div className="text-sm">
                     You acknowledge and agree that any questions, comments,
                     suggestions, ideas, feedback, or other information regarding
                     the Site or the Marketplace Offerings (“Submissions”)
@@ -570,11 +569,11 @@ export default function Terms() {
                     shall be no recourse against us for any alleged or actual
                     infringement or misappropriation of any proprietary right in
                     your Submissions.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="SITE MANAGEMENT">
-                  <Text>
+                  <div className="text-sm">
                     We reserve the right, but not the obligation, to: (1)
                     monitor the Site for violations of these Terms of Use; (2)
                     take appropriate legal action against anyone who, in our
@@ -591,11 +590,11 @@ export default function Terms() {
                     the Site in a manner designed to protect our rights and
                     property and to facilitate the proper functioning of the
                     Site and the Marketplace Offerings.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="PRIVACY POLICY">
-                  <Text>
+                  <div className="text-sm">
                     We care about data privacy and security. Please review our
                     Privacy Policy: https://delsolventures.nft/privacy. By using
                     the Site or the Marketplace Offerings, you agree to be bound
@@ -609,11 +608,11 @@ export default function Terms() {
                     continued use of the Site, you are transferring your data to
                     the United States, and you agree to have your data
                     transferred to and processed in the United States.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="TERM AND TERMINATION">
-                  <Text>
+                  <div className="text-sm">
                     These Terms of Use shall remain in full force and effect
                     while you use the Site. WITHOUT LIMITING ANY OTHER PROVISION
                     OF THESE TERMS OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE
@@ -634,11 +633,11 @@ export default function Terms() {
                     your account, we reserve the right to take appropriate legal
                     action, including without limitation pursuing civil,
                     criminal, and injunctive redress.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="MODIFICATIONS AND INTERRUPTIONS">
-                  <Text>
+                  <div className="text-sm">
                     We reserve the right to change, modify, or remove the
                     contents of the Site at any time or for any reason at our
                     sole discretion without notice. However, we have no
@@ -668,12 +667,12 @@ export default function Terms() {
                     State of Delaware applicable to agreements made and to be
                     entirely performed within the State of Delaware, without
                     regard to its conflict of law principles.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="DISPUTE RESOLUTION">
-                  <Text h2>Informal Negotiations</Text>
-                  <Text>
+                  <div h2>Informal Negotiations</div>
+                  <div className="text-sm">
                     To expedite resolution and control the cost of any dispute,
                     controversy, or claim related to these Terms of Use (each
                     “Dispute” and collectively, the “Disputes”) brought by
@@ -684,9 +683,9 @@ export default function Terms() {
                     before initiating arbitration. Such informal negotiations
                     commence upon written notice from one Party to the other
                     Party.
-                  </Text>
-                  <Text>Binding Arbitration</Text>
-                  <Text>
+                  </div>
+                  <div className="text-sm">Binding Arbitration</div>
+                  <div className="text-sm">
                     If the Parties are unable to resolve a Dispute through
                     informal negotiations, the Dispute (except those Disputes
                     expressly excluded below) will be finally and exclusively
@@ -730,9 +729,9 @@ export default function Terms() {
                     be decided by a court of competent jurisdiction within the
                     courts listed for jurisdiction above, and the Parties agree
                     to submit to the personal jurisdiction of that court.
-                  </Text>
-                  <Text>Restrictions</Text>
-                  <Text>
+                  </div>
+                  <div className="text-sm">Restrictions</div>
+                  <div className="text-sm">
                     The Parties agree that any arbitration shall be limited to
                     the Dispute between the Parties individually. To the full
                     extent permitted by law, (a) no arbitration shall be joined
@@ -742,11 +741,11 @@ export default function Terms() {
                     is no right or authority for any Dispute to be brought in a
                     purported representative capacity on behalf of the general
                     public or any other persons.
-                  </Text>
-                  <Text>
+                  </div>
+                  <div className="text-sm">
                     Exceptions to Informal Negotiations and Arbitration
-                  </Text>
-                  <Text>
+                  </div>
+                  <div className="text-sm">
                     The Parties agree that the following Disputes are not
                     subject to the above provisions concerning informal
                     negotiations and binding arbitration: (a) any Disputes
@@ -762,13 +761,11 @@ export default function Terms() {
                     of competent jurisdiction within the courts listed for
                     jurisdiction above, and the Parties agree to submit to the
                     personal jurisdiction of that court.
-                  </Text>
-                  <Text></Text>
-                  <Text></Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="CORRECTIONS">
-                  <Text>
+                  <div className="text-sm">
                     There may be information on the Site that contains
                     typographical errors, inaccuracies, or omissions that may
                     relate to the Marketplace Offerings, including descriptions,
@@ -776,11 +773,11 @@ export default function Terms() {
                     reserve the right to correct any errors, inaccuracies, or
                     omissions and to change or update the information on the
                     Site at any time, without prior notice.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="DISCLAIMER">
-                  <Text>
+                  <div className="text-sm">
                     THE SITE AND THE MARKETPLACE OFFERINGS ARE PROVIDED ON AN
                     AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE
                     SITE AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE
@@ -816,11 +813,11 @@ export default function Terms() {
                     AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY
                     MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST
                     JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="LIMITATIONS OF LIABILITY">
-                  <Text>
+                  <div className="text-sm">
                     IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS
                     BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT,
                     INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR
@@ -914,17 +911,17 @@ export default function Terms() {
                     defenses you may have based on the electronic form of these
                     Terms of Use and the lack of signing by the parties hereto
                     to execute these Terms of Use.
-                  </Text>
+                  </div>
                 </Collapse>
 
                 <Collapse title="CONTACT US">
-                  <Text>
+                  <div className="text-sm">
                     In order to resolve a complaint regarding the Site or the
                     Marketplace Offerings or to receive further information
                     regarding use of the Site or the Marketplace Offerings,
                     please contact us at:
-                  </Text>
-                  <Text>
+                  </div>
+                  <div className="text-sm">
                     del SOL VENTURES INC.
                     <br />
                     16192 Coastal Highway
@@ -932,7 +929,7 @@ export default function Terms() {
                     Lewes, DE 19958
                     <br />
                     United States
-                  </Text>
+                  </div>
                 </Collapse>
               </Collapse.Group>
             </div>

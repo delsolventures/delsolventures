@@ -1,4 +1,4 @@
-import { Collapse, Text, Link } from "@nextui-org/react";
+import { Collapse, Link } from "@nextui-org/react";
 import Image from "next/image";
 import Navbar from "../components/navbar";
 //import Footer from "../components/footer";
@@ -18,15 +18,20 @@ export default function Privacy() {
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <Text
-                  h1
-                  className="uppercase text-trueGray-100 font-semibold text-5xl"
-                >
+                <div className="h1 uppercase text-trueGray-100 font-semibold text-5xl">
                   Privacy Notice
-                </Text>
-                <Text className="mt-4 text-lg text-trueGray-100">
+                </div>
+                <div className="mt-4 text-lg text-trueGray-100">
                   Last Updated 1 Jan {new Date().getFullYear()}
-                </Text>
+                </div>
+                <Image
+                  className="relative block mx-auto px-8"
+                  src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-759ef7b241b8f7dbc52a21347d37c181.png"
+                  height={500}
+                  width={500}
+                  objectFit="fill"
+                  alt="Terms"
+                />
               </div>
             </div>
           </div>
@@ -36,48 +41,49 @@ export default function Privacy() {
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full ml-auto mr-auto px-4">
-                <Text h2 className="uppercase text-2xl text-trueGray-700">
+                <div className="h2 uppercase text-2xl text-trueGray-700 dark:text-trueGray-100">
                   Privacy Notice
-                </Text>
-                <Text className="mt-4 text-lg text-trueGray-100">
+                </div>
+                <div className="mt-4 text-lg text-trueGray-700 dark:text-trueGray-100">
                   Last Updated 1 Jan {new Date().getFullYear()}
-                </Text>
+                </div>
                 <Collapse.Group splitted className="text-trueGray-700">
                   <Collapse title="GENERAL NOTICE" expanded>
-                    <Text>
-                      Thank you for choosing to be part of our community at 4MB
-                      INC, doing business as del SOL ("del SOL VENTURES INC.,"
-                      "we," "us," or "our"). We are committed to protecting your
+                    <div className="text-sm text-trueGray-700">
+                      Thank you for choosing to be part of our community at del
+                      SOL VENTURES INC, doing business as del SOL (&quot;del SOL
+                      VENTURES INC.,&quot; &quot;we,&quot; &quot;us,&quot; or
+                      &quot;our&quot;). We are committed to protecting your
                       personal information and your right to privacy. If you
                       have any questions or concerns about this privacy notice
                       or our practices with regard to your personal information,
                       please contact us at delsolventures@skiff.com. This
                       privacy notice describes how we might use your information
                       if you:
-                      <Link href="/">
+                      <Link href="/" className="text-sm">
                         Visit our website at https://delsolventures.nft
                       </Link>
                       Engage with us in other related ways ― including any
                       sales, marketing, or events In this privacy notice, if we
-                      refer to: "Website," we are referring to any website of
-                      ours that references or links to this policy "Services,"
-                      we are referring to our Website, and other related
-                      services, including any sales, marketing, or events The
-                      purpose of this privacy notice is to explain to you in the
-                      clearest way possible what information we collect, how we
-                      use it, and what rights you have in relation to it. If
-                      there are any terms in this privacy notice that you do not
-                      agree with, please discontinue use of our Services
-                      immediately.
-                    </Text>
-                    <Text b>
+                      refer to: &quot;Website,&quot; we are referring to any
+                      website of ours that references or links to this policy
+                      &quot;Services,&quot; we are referring to our Website, and
+                      other related services, including any sales, marketing, or
+                      events The purpose of this privacy notice is to explain to
+                      you in the clearest way possible what information we
+                      collect, how we use it, and what rights you have in
+                      relation to it. If there are any terms in this privacy
+                      notice that you do not agree with, please discontinue use
+                      of our Services immediately.
+                    </div>
+                    <div className="font-bold text-sm">
                       Please read this privacy notice carefully, as it will help
                       you understand what we do with the information that we
                       collect.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="1. WHAT INFORMATION DO WE COLLECT?">
-                    <Text>
+                    <div className="text-sm">
                       Personal information you disclose to us In Short: We
                       collect personal information that you provide to us. We
                       collect personal information that you voluntarily provide
@@ -94,10 +100,10 @@ export default function Privacy() {
                       information. All personal information that you provide to
                       us must be true, complete and accurate, and you must
                       notify us of any changes to such personal information.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="2. HOW DO WE USE YOUR INFORMATION?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: We process your information for purposes based
                       on legitimate business interests, the fulfillment of our
                       contract with you, compliance with our legal obligations,
@@ -110,53 +116,55 @@ export default function Privacy() {
                       our legal obligations. We indicate the specific processing
                       grounds we rely on next to each purpose listed below. We
                       use the information we collect or receive:
-                    </Text>
-
-                    <Text className="pl-8">
-                      Fulfill and manage your orders. We may use your
-                      information to fulfill and manage your orders, payments,
-                      returns, and exchanges made through the Website.{" "}
-                    </Text>
-                    <Text className="pl-8">
-                      Administer prize draws and competitions. We may use your
-                      information to administer prize draws and competitions
-                      when you elect to participate in our competitions.{" "}
-                    </Text>
-                    <Text className="pl-8">
-                      To deliver and facilitate delivery of services to the
-                      user. We may use your information to provide you with the
-                      requested service.{" "}
-                    </Text>
-                    <Text className="pl-8">
-                      To respond to user inquiries/offer support to users. We
-                      may use your information to respond to your inquiries and
-                      solve any potential issues you might have with the use of
-                      our Services.{" "}
-                    </Text>
-                    <Text className="pl-8">
-                      To send you marketing and promotional communications. We
-                      and/or our third-party marketing partners may use the
-                      personal information you send to us for our marketing
-                      purposes, if this is in accordance with your marketing
-                      preferences. For example, when expressing an interest in
-                      obtaining information about us or our Website, subscribing
-                      to marketing or otherwise contacting us, we will collect
-                      personal information from you. You can opt-out of our
-                      marketing emails at any time{" "}
-                      <Link>
-                        (see the "WHAT ARE YOUR PRIVACY RIGHTS?" below).
-                      </Link>{" "}
-                    </Text>
-                    <Text className="pl-8">
-                      Deliver targeted advertising to you. We may use your
-                      information to develop and display personalized content
-                      and advertising (and work with third parties who do so)
-                      tailored to your interests and/or location and to measure
-                      its effectiveness.
-                    </Text>
+                    </div>
+                    <ol className="list-decimal list-inside pl-4 text-sm">
+                      <li className="text-sm">
+                        Fulfill and manage your orders. We may use your
+                        information to fulfill and manage your orders, payments,
+                        returns, and exchanges made through the Website.
+                      </li>
+                      <li className="text-sm">
+                        Administer prize draws and competitions. We may use your
+                        information to administer prize draws and competitions
+                        when you elect to participate in our competitions.
+                      </li>
+                      <li className="text-sm">
+                        To deliver and facilitate delivery of services to the
+                        user. We may use your information to provide you with
+                        the requested service.
+                      </li>
+                      <li className="text-sm">
+                        To respond to user inquiries/offer support to users. We
+                        may use your information to respond to your inquiries
+                        and solve any potential issues you might have with the
+                        use of our Services.
+                      </li>
+                      <li className="text-sm">
+                        To send you marketing and promotional communications. We
+                        and/or our third-party marketing partners may use the
+                        personal information you send to us for our marketing
+                        purposes, if this is in accordance with your marketing
+                        preferences. For example, when expressing an interest in
+                        obtaining information about us or our Website,
+                        subscribing to marketing or otherwise contacting us, we
+                        will collect personal information from you. You can
+                        opt-out of our marketing emails at any time
+                        <span className="font-bold">
+                          (see the &quot;WHAT ARE YOUR PRIVACY RIGHTS?&quot;
+                          below).
+                        </span>
+                      </li>
+                      <li className="text-sm">
+                        Deliver targeted advertising to you. We may use your
+                        information to develop and display personalized content
+                        and advertising (and work with third parties who do so)
+                        tailored to your interests and/or location and to
+                        measure its effectiveness.
+                      </li>
+                    </ol>
                   </Collapse>
                   <Collapse title="3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: We only share information with your consent, to
                       comply with laws, to provide you with services, to protect
                       your rights, or to fulfill business obligations. We may
@@ -188,10 +196,10 @@ export default function Privacy() {
                       any merger, sale of company assets, financing, or
                       acquisition of all or a portion of our business to another
                       company.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: We may use cookies and other tracking
                       technologies to collect and store your information. We may
                       use cookies and similar tracking technologies (like web
@@ -199,10 +207,10 @@ export default function Privacy() {
                       Specific information about how we use such technologies
                       and how you can refuse certain cookies is set out in our
                       Cookie Notice.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="5. HOW LONG DO WE KEEP YOUR INFORMATION?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: We keep your information for as long as
                       necessary to fulfill the purposes outlined in this privacy
                       notice unless otherwise required by law. We will only keep
@@ -219,10 +227,10 @@ export default function Privacy() {
                       in backup archives), then we will securely store your
                       personal information and isolate it from any further
                       processing until deletion is possible.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="6. HOW DO WE KEEP YOUR INFORMATION SAFE?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: We aim to protect your personal information
                       through a system of organizational and technical security
                       measures. We have implemented appropriate technical and
@@ -239,109 +247,127 @@ export default function Privacy() {
                       personal information, transmission of personal information
                       to and from our Website is at your own risk. You should
                       only access the Website within a secure environment.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="7. DO WE COLLECT INFORMATION FROM MINORS?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: We do not knowingly collect data from or market
                       to children under 18 years of age. We do not knowingly
                       solicit data from or market to children under 18 years of
                       age. By using the Website, you represent that you are at
                       least 18 or that you are the parent or guardian of such a
-                      minor and consent to such minor dependent’s use of the
-                      Website. If we learn that personal information from users
-                      less than 18 years of age has been collected, we will
-                      deactivate the account and take reasonable measures to
-                      promptly delete such data from our records. If you become
-                      aware of any data we may have collected from children
-                      under age 18, please contact us at
+                      minor and consent to such minor dependent&apos;s use of
+                      the Website. If we learn that personal information from
+                      users less than 18 years of age has been collected, we
+                      will deactivate the account and take reasonable measures
+                      to promptly delete such data from our records. If you
+                      become aware of any data we may have collected from
+                      children under age 18, please contact us at
                       legal@delsolventures.nft.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="8. WHAT ARE YOUR PRIVACY RIGHTS?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: You may review, change, or terminate your
                       account at any time. If you are a resident in the EEA or
                       UK and you believe we are unlawfully processing your
                       personal information, you also have the right to complain
                       to your local data protection supervisory authority. You
                       can find their contact details here:
-                      https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm.
-                      If you are a resident in Switzerland, the contact details
-                      for the data protection authorities are available here:
-                      https://www.edoeb.admin.ch/edoeb/en/home.html. Cookies and
-                      similar technologies: Most Web browsers are set to accept
-                      cookies by default. If you prefer, you can usually choose
-                      to set your browser to remove cookies and to reject
-                      cookies. If you choose to remove cookies or reject
-                      cookies, this could affect certain features or services of
-                      our Website. To opt-out of interest-based advertising by
-                      advertisers on our Website visit
-                      http://www.aboutads.info/choices/.
-                    </Text>
+                      <Link
+                        href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm"
+                        target="_blank"
+                      >
+                        https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm
+                      </Link>
+                      . If you are a resident in Switzerland, the contact
+                      details for the data protection authorities are available
+                      here:
+                      <Link
+                        href="https://www.edoeb.admin.ch/edoeb/en/home.html"
+                        target="_blank"
+                      >
+                        https://www.edoeb.admin.ch/edoeb/en/home.html
+                      </Link>
+                      . Cookies and similar technologies: Most Web browsers are
+                      set to accept cookies by default. If you prefer, you can
+                      usually choose to set your browser to remove cookies and
+                      to reject cookies. If you choose to remove cookies or
+                      reject cookies, this could affect certain features or
+                      services of our Website. To opt-out of interest-based
+                      advertising by advertisers on our Website visit
+                      <Link
+                        href="http://www.aboutads.info/choices/"
+                        target="_blank"
+                      >
+                        http://www.aboutads.info/choices/
+                      </Link>
+                      .
+                    </div>
                   </Collapse>
                   <Collapse title="9. CONTROLS FOR DO-NOT-TRACK FEATURES">
-                    <Text>
+                    <div className="text-sm">
                       Most web browsers and some mobile operating systems and
-                      mobile applications include a Do-Not-Track ("DNT") feature
-                      or setting you can activate to signal your privacy
-                      preference not to have data about your online browsing
-                      activities monitored and collected. At this stage no
-                      uniform technology standard for recognizing and
-                      implementing DNT signals has been finalized. As such, we
-                      do not currently respond to DNT browser signals or any
+                      mobile applications include a Do-Not-Track
+                      (&quot;DNT&quot;) feature or setting you can activate to
+                      signal your privacy preference not to have data about your
+                      online browsing activities monitored and collected. At
+                      this stage no uniform technology standard for recognizing
+                      and implementing DNT signals has been finalized. As such,
+                      we do not currently respond to DNT browser signals or any
                       other mechanism that automatically communicates your
                       choice not to be tracked online. If a standard for online
                       tracking is adopted that we must follow in the future, we
                       will inform you about that practice in a revised version
                       of this privacy notice.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: Yes, if you are a resident of California, you
                       are granted specific rights regarding access to your
                       personal information. California Civil Code Section
-                      1798.83, also known as the "Shine The Light" law, permits
-                      our users who are California residents to request and
-                      obtain from us, once a year and free of charge,
-                      information about categories of personal information (if
-                      any) we disclosed to third parties for direct marketing
-                      purposes and the names and addresses of all third parties
-                      with which we shared personal information in the
-                      immediately preceding calendar year. If you are a
-                      California resident and would like to make such a request,
-                      please submit your request in writing to us using the
-                      contact information provided below. If you are under 18
-                      years of age, reside in California, and have a registered
-                      account with the Website, you have the right to request
-                      removal of unwanted data that you publicly post on the
-                      Website. To request removal of such data, please contact
-                      us using the contact information provided below, and
-                      include the email address associated with your account and
-                      a statement that you reside in California. We will make
-                      sure the data is not publicly displayed on the Website,
-                      but please be aware that the data may not be completely or
-                      comprehensively removed from all our systems (e.g.
-                      backups, etc.).
-                    </Text>
-                    <Text weight="bold">CCPA Privacy Notice</Text>
-                    <Text>
-                      The California Code of Regulations defines a "resident"
-                      as: (1) every individual who is in the State of California
-                      for other than a temporary or transitory purpose and (2)
-                      every individual who is domiciled in the State of
-                      California who is outside the State of California for a
-                      temporary or transitory purpose All other individuals are
-                      defined as "non-residents." If this definition of
-                      "resident" applies to you, we must adhere to certain
-                      rights and obligations regarding your personal
+                      1798.83, also known as the &quot;Shine The Light&quot;
+                      law, permits our users who are California residents to
+                      request and obtain from us, once a year and free of
+                      charge, information about categories of personal
+                      information (if any) we disclosed to third parties for
+                      direct marketing purposes and the names and addresses of
+                      all third parties with which we shared personal
+                      information in the immediately preceding calendar year. If
+                      you are a California resident and would like to make such
+                      a request, please submit your request in writing to us
+                      using the contact information provided below. If you are
+                      under 18 years of age, reside in California, and have a
+                      registered account with the Website, you have the right to
+                      request removal of unwanted data that you publicly post on
+                      the Website. To request removal of such data, please
+                      contact us using the contact information provided below,
+                      and include the email address associated with your account
+                      and a statement that you reside in California. We will
+                      make sure the data is not publicly displayed on the
+                      Website, but please be aware that the data may not be
+                      completely or comprehensively removed from all our systems
+                      (e.g. backups, etc.).
+                    </div>
+                    <div className="h3 text-semibold">CCPA Privacy Notice</div>
+                    <div className="text-sm">
+                      The California Code of Regulations defines a
+                      &quot;resident&quot; as: (1) every individual who is in
+                      the State of California for other than a temporary or
+                      transitory purpose and (2) every individual who is
+                      domiciled in the State of California who is outside the
+                      State of California for a temporary or transitory purpose
+                      All other individuals are defined as
+                      &quot;non-residents.&quot; If this definition of
+                      &quot;resident&quot; applies to you, we must adhere to
+                      certain rights and obligations regarding your personal
                       information. What categories of personal information do we
                       collect? We have collected the following categories of
                       personal information in the past twelve (12) months:
-                    </Text>
+                    </div>
                     <Privacy_CCPA />
-                    <Text>
+                    <div className="text-sm">
                       We may also collect other personal information outside of
                       these categories instances where you interact with us
                       in-person, online, or by phone or mail in the context of:
@@ -352,30 +378,35 @@ export default function Privacy() {
                       personal information? More information about our data
                       collection and sharing practices can be found in this
                       privacy notice. You may contact us by email at
-                      legal@delsolventures.nft, by visiting
-                      https://delsolventures.nft/contact, or by referring to the
-                      contact details at the bottom of this document. If you are
-                      using an authorized agent to exercise your right to
-                      opt-out we may deny a request if the authorized agent does
-                      not submit proof that they have been validly authorized to
-                      act on your behalf. Will your information be shared with
-                      anyone else? We may disclose your personal information
-                      with our service providers pursuant to a written contract
-                      between us and each service provider. Each service
-                      provider is a for-profit entity that processes the
-                      information on our behalf. We may use your personal
-                      information for our own business purposes, such as for
-                      undertaking internal research for technological
-                      development and demonstration. This is not considered to
-                      be "selling" of your personal data. del SOL has not
-                      disclosed or sold any personal information to third
-                      parties for a business or commercial purpose in the
-                      preceding 12 months. del SOL will not sell personal
-                      information in the future belonging to website visitors,
-                      users and other consumers. Your rights with respect to
-                      your personal data Right to request deletion of the data -
-                      Request to delete You can ask for the deletion of your
-                      personal information. If you ask us to delete your
+                      <span className="font-bold">
+                        legal@delsolventures.nft
+                      </span>
+                      , by visiting
+                      <Link href="https://delsolventures.nft/contact">
+                        https://delsolventures.nft/contact
+                      </Link>
+                      , or by referring to the contact details at the bottom of
+                      this document. If you are using an authorized agent to
+                      exercise your right to opt-out we may deny a request if
+                      the authorized agent does not submit proof that they have
+                      been validly authorized to act on your behalf. Will your
+                      information be shared with anyone else? We may disclose
+                      your personal information with our service providers
+                      pursuant to a written contract between us and each service
+                      provider. Each service provider is a for-profit entity
+                      that processes the information on our behalf. We may use
+                      your personal information for our own business purposes,
+                      such as for undertaking internal research for
+                      technological development and demonstration. This is not
+                      considered to be &quot;selling&quot; of your personal
+                      data. del SOL has not disclosed or sold any personal
+                      information to third parties for a business or commercial
+                      purpose in the preceding 12 months. del SOL will not sell
+                      personal information in the future belonging to website
+                      visitors, users and other consumers. Your rights with
+                      respect to your personal data Right to request deletion of
+                      the data - Request to delete You can ask for the deletion
+                      of your personal information. If you ask us to delete your
                       personal information, we will respect your request and
                       delete your personal information, subject to certain
                       exceptions provided by law, such as (but not limited to)
@@ -398,7 +429,7 @@ export default function Privacy() {
                       delete consumer information that is de-identified in
                       response to a consumer request or to re-identify
                       individual data to verify a consumer request. Right to
-                      Non-Discrimination for the Exercise of a Consumer’s
+                      Non-Discrimination for the Exercise of a Consumer&apos;s
                       Privacy Rights We will not discriminate against you if you
                       exercise your privacy rights. Verification process Upon
                       receiving your request, we will need to verify your
@@ -442,28 +473,29 @@ export default function Privacy() {
                       referring to the contact details at the bottom of this
                       document. If you have a complaint about how we handle your
                       data, we would like to hear from you.
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="11. DO WE MAKE UPDATES TO THIS NOTICE?">
-                    <Text>
+                    <div className="text-sm">
                       In Short: Yes, we will update this notice as necessary to
                       stay compliant with relevant laws. We may update this
                       privacy notice from time to time. The updated version will
-                      be indicated by an updated "Revised" date and the updated
-                      version will be effective as soon as it is accessible. If
-                      we make material changes to this privacy notice, we may
-                      notify you either by prominently posting a notice of such
-                      changes or by directly sending you a notification. We
-                      encourage you to review this privacy notice frequently to
-                      be informed of how we are protecting your information.
-                    </Text>
+                      be indicated by an updated &quot;Revised&quot; date and
+                      the updated version will be effective as soon as it is
+                      accessible. If we make material changes to this privacy
+                      notice, we may notify you either by prominently posting a
+                      notice of such changes or by directly sending you a
+                      notification. We encourage you to review this privacy
+                      notice frequently to be informed of how we are protecting
+                      your information.
+                    </div>
                   </Collapse>
                   <Collapse title="12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?">
-                    <Text>
+                    <div className="text-sm">
                       If you have questions or comments about this notice, you
                       may email us at legal@delsolventures.nft or by post to:
-                    </Text>
-                    <Text>
+                    </div>
+                    <div className="text-sm">
                       del SOL VENTURES INC.
                       <br />
                       16192 Coastal Highway
@@ -471,18 +503,18 @@ export default function Privacy() {
                       Lewes, DE 19958
                       <br />
                       United States
-                    </Text>
+                    </div>
                   </Collapse>
                   <Collapse title="13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU? ">
-                    <Text>
+                    <div className="text-sm">
                       Based on the applicable laws of your country, you may have
                       the right to request access to the personal information we
                       collect from you, change that information, or delete it in
                       some circumstances. To request to review, update, or
                       delete your personal information, please submit a request
-                      by clicking here for our:{" "}
+                      by clicking here for our:
                       <Link href="/contact">Contact Form.</Link>
-                    </Text>
+                    </div>
                   </Collapse>
                 </Collapse.Group>
               </div>
