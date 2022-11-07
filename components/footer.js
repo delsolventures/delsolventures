@@ -2,24 +2,23 @@
 import React from "react";
 //import Container from "./container";
 import Link from "next/link";
-//import Image from "next/image";
+import Image from "next/image";
 
 export default function Footer() {
   const legal = [
     { name: "Terms", href: "/terms" },
-    { name: "Privacy", href: "/privacy" }
+    { name: "Privacy", href: "/privacy" },
   ];
 
   return (
     <div className="relative px-8 w-full mx-auto pb-2 ">
       <div className="pt-2 text-center text-trueGray-700 dark:text-trueGray-100 border-t border-trueGray-100 dark:border-trueGray-700">
-        <Link href="/"a className="space-x-2">
-            <span className="px-2 underline text-center text-xl font-semibold ">
-              del SOL{" "}
-            </span>
-            <br />
-            <span className="no-underline text-xs">VENTURES INC.</span>
-          
+        <Link href="/" a className="space-x-2">
+          <span className="px-2 underline text-center text-xl font-semibold ">
+            del SOL{" "}
+          </span>
+          <br />
+          <span className="no-underline text-xs">VENTURES INC.</span>
         </Link>
 
         <p>delsolventures@skiff.com</p>
@@ -85,7 +84,7 @@ const Backlink = () => {
         dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300"
         type="button"
       >
-        <img alt="..." className="w-5 mr-1" src="/img/logo-delsol.svg" />
+        <Image alt="del SOL" className="w-5 mr-1" src="/img/logo-delsol.svg" />
         del Sol Ventures
       </button>
     </>

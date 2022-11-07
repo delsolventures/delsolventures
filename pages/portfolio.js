@@ -22,8 +22,8 @@ export default function Portfolio() {
       <div className="main">
         <Navbar />
         <SectionTitle pretitle="Portfolio" title="del SOL Mission Statement">
-          "Our mission is to support Southern Californian start-ups and
-          communities to create sustainable, renewable & secure platforms."
+          &quot;Our mission is to support Southern Californian start-ups and
+          communities to create sustainable, renewable & secure platforms.&quot;
         </SectionTitle>
         <div className="container  items-center p-8 mx-auto w-full place-content-center">
           <div className="flex flex-wrap sm:flex-no-wrap items-center justify-between w-full h-auto">

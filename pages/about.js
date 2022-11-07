@@ -117,8 +117,8 @@ export default function About() {
 
                   <div className="text-trueGray-700 dark:text-trueGray-100 mx-4">
                     <p className="italic mt-2 ">
-                      "Building strategic partnerships focused on innovative &
-                      sustainable solutions.".
+                      Building strategic partnerships focused on innovative &
+                      sustainable solutions.
                     </p>
                   </div>
                 </div>

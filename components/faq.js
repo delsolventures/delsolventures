@@ -1,14 +1,15 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
 //import { ChevronUpIcon } from "@heroicons/react/solid";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
 
-export default function Faq() {
+const Faq = () => {
   return (
     <Container className="!p-0">
       <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
-        {faqdata.map((item, index) => (
+        {faqdata.map((item) => (
           <div key={item.question} className="mb-5">
             <Disclosure>
               {({ open }) => (
@@ -32,7 +33,7 @@ export default function Faq() {
       </div>
     </Container>
   );
-}
+};
 
 const faqdata = [
   {
@@ -51,20 +52,4 @@ const faqdata = [
   },
 ];
 
-function ChevronUpIconSVG() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M4.5 15.75l7.5-7.5 7.5 7.5"
-      />
-    </svg>
-  );
-}
+export default Faq;
