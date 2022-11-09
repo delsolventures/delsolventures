@@ -20,8 +20,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {CssBaseline.flush()}
-
-          <meta name="title" content="del SOL" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://delsolventures.nft/" />
           <meta property="og:title" content="del SOL VENTURES" />
