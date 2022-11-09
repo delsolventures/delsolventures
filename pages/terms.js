@@ -1,5 +1,6 @@
-import { Collapse, Text, Link, Table } from "@nextui-org/react";
+import { Collapse, Text, Table } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "../components/navbar";
 //import Footer from "../components/footer";
 import SEO from "../components/seo";
@@ -28,8 +29,8 @@ export default function Terms() {
                   src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png"
                   height={500}
                   width={500}
-                  objectFit="fill"
                   alt="Terms"
+                  priority={true}
                 />
               </div>
             </div>
@@ -40,10 +41,7 @@ export default function Terms() {
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full  ml-auto mr-auto px-4">
-                <div
-                  h2
-                  className="uppercase text-2xl text-trueGray-700 dark:text-trueGray-100"
-                >
+                <div className="h2 uppercase text-2xl text-trueGray-700 dark:text-trueGray-100">
                   Terms & Conditions Notice
                 </div>
                 <div className="mt-4 text-lg text-trueGray-700 dark:text-trueGray-100">
@@ -671,7 +669,7 @@ export default function Terms() {
                 </Collapse>
 
                 <Collapse title="DISPUTE RESOLUTION">
-                  <div h2>Informal Negotiations</div>
+                  <div className="h2">Informal Negotiations</div>
                   <div className="text-sm">
                     To expedite resolution and control the cost of any dispute,
                     controversy, or claim related to these Terms of Use (each
