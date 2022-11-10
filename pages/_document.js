@@ -3,7 +3,6 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { CssBaseline } from "@nextui-org/react";
 import Script from "next/script";
 import Footer from "../components/footermini";
-
 //import Head from "next/head";
 
 class MyDocument extends Document {
@@ -20,8 +19,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {CssBaseline.flush()}
-
-          <meta name="title" content="del SOL" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://delsolventures.nft/" />
           <meta property="og:title" content="del SOL VENTURES" />
@@ -62,10 +59,9 @@ class MyDocument extends Document {
             href="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/logo-ds.png"
           />
         </Head>
-        <body className="lightmode dark:darkmode  ">
+        <body className="lightmode dark:darkmode">
           <Main />
-          <NextScript />
-          <Footer />
+          <NextScript /> <Footer />
         </body>
       </Html>
     );

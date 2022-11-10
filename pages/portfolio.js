@@ -66,6 +66,7 @@ function Card1() {
           height={300}
           width={300}
           alt="Foodtech"
+          priority={true}
         />
         <p className="text-trueGray-100 text-md mb-4">
           Vertical Farm Systems. <br />
