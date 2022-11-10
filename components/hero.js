@@ -22,10 +22,10 @@ export default function Hero() {
           <div className="hidden lg:block">
             <Image
               src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-f93384e7375de3fe0c8ab3a29cd337ea.png"
-              width="600"
-              height="600"
+              width={600}
+              height={600}
               alt="Hero Illustration"
-              loading="eager"
+              priority={true}
             />
           </div>
         </div>
