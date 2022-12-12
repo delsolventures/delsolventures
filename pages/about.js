@@ -28,7 +28,7 @@ export default function About() {
       <main className="about-page h-full">
         <section className="relative py-16 ">
           <div className="container mx-auto px-4">
-            <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-xl rounded-lg mt-32 bg-gradient-to-l from-trueSky-600">
+            <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-xl rounded-lg mt-32 bg-gradient-to-l from-trueSky-800">
               <div className="px-6">
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
@@ -48,7 +48,7 @@ export default function About() {
                     <div className="py-6 px-3 mt-16 sm:mt-0">
                       <Link href="/contact">
                         <button
-                          className="border-2 border-solid border-trueGray-100  bg-trueSky-600 active:bg-trueGray-600 uppercase text-trueGray-700 dark:text-trueGray-100 font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                          className="border-2 border-solid border-trueGray-100 bg-trueSky-800 active:bg-trueGray-600 uppercase text-trueGray-100 font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                           type="button"
                         >
                           Contact

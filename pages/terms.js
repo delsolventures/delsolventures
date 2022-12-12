@@ -41,12 +41,6 @@ export default function Terms() {
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full  ml-auto mr-auto px-4">
-                <div className="h2 uppercase text-2xl text-trueGray-700 dark:text-trueGray-100">
-                  Terms & Conditions Notice
-                </div>
-                <div className="mt-4 text-lg text-trueGray-700 dark:text-trueGray-100">
-                  Last Updated 1 Jan {new Date().getFullYear()}
-                </div>
                 <div className="text-sm text-trueGray-700">
                   These Terms of Use constitute a legally binding agreement made
                   between you, whether personally or on behalf of an entity

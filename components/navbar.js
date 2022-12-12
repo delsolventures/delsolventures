@@ -37,7 +37,7 @@ export default function Navbar() {
                   {open ? (
                     <FontAwesomeIcon
                       icon={faCircleXmark}
-                      className="block h-6 w-6"
+                      className="block h-6 w-6 text-trueGray-500"
                       aria-hidden="true"
                     />
                   ) : (
@@ -49,7 +49,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="mt-4 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Link
                     href="/"
@@ -93,7 +93,7 @@ export default function Navbar() {
                     item.current
                       ? "bg-trueSky-600 text-trueGray-700 dark:text-trueGray-100 dark:bg-trueSky-600"
                       : "text-trueGray-700 hover:bg-trueGray-400 dark:text-trueGray-100 dark:hover:bg-trueGray-400",
-                    "block px-3 py-2 rounded-md text-base font-medium"
+                    "block px-3 py-2 rounded-md text-lg font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
@@ -114,8 +114,8 @@ function Brand() {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 258 344"
       preserveAspectRatio="xMidYMid meet"
-      width="50"
-      height="50"
+      width="70"
+      height="70"
     >
       <g transform="matrix(1,0,0,1,0,-26)">
         <rect y="0" height="1" width="1" opacity="0" />
