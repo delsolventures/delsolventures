@@ -14,12 +14,12 @@ const Faq = () => {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-trueGray-700 rounded-lg bg-trueGray-50 hover:bg-trueGray-100 focus:outline-none focus-visible:ring focus-visible:ring-trueSky-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-trueGray-100">
+                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left rounded-lg hover:bg-trueBlue-400 focus:outline-none focus-visible:ring focus-visible:ring-trueSky-100 focus-visible:ring-opacity-75 text-trueGray-700 bg-trueSky-400 dark:bg-trueSky-800 dark:text-trueGray-100">
                     <span>{item.question}</span>
                     <ChevronUpIcon
                       className={`${
                         open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-trueSky-500`}
+                      } w-5 h-5 text-trueGray-100 dark:text-trueGray-700`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-trueGray-700 dark:text-trueGray-100">

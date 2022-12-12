@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
       cal("floatingButton", {
         calLink: "delsolventures/30min",
         buttonText: "Schedule A Call",
-        buttonColor: "#0284c7",
+        buttonColor: "#075985",
         buttonTextColor: "#f3f4f6",
         buttonPosition: "bottom-left",
       });
