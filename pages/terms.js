@@ -5,6 +5,11 @@ import Navbar from "../components/navbar";
 //import Footer from "../components/footer";
 import SEO from "../components/seo";
 import PopupWidget from "../components/popupWidget";
+
+const ImageTerms = ({ src, width, quality }) => {
+  return `https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/${src}?w=${width}&q=${quality || 75}`;
+};
+
 export default function Terms() {
   return (
     <>
@@ -25,8 +30,9 @@ export default function Terms() {
                   Last Updated 1 Jan {new Date().getFullYear()}
                 </div>
                 <Image
+                loader={ImageTerms}
                   className="relative block mx-auto px-8"
-                  src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png"
+                  src="/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png"
                   height={500}
                   width={500}
                   alt="Terms"
