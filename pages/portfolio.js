@@ -53,6 +53,9 @@ export default function Portfolio() {
   );
 }
 
+const ImageCard = ({ src, width, quality }) => {
+  return `https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/${src}?w=${width}&q=${quality || 75}`;
+};
 function Card1() {
   return (
     <div className="bg-trueGray-700 block p-4 rounded-lg shadow-lg  max-w-sm border-2 border-trueGray-700 border-solid">
@@ -61,8 +64,9 @@ function Card1() {
       </h5>
       <div>
         <Image
+        loader={ImageCard}
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
-          src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-304181b3182265078bad3744c08e8ab6.png"
+          src="/doodleipsum-304181b3182265078bad3744c08e8ab6.png"
           height={300}
           width={300}
           alt="Foodtech"
@@ -94,8 +98,9 @@ function Card2() {
       </h5>
       <div>
         <Image
+        loader={ImageCard}
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
-          src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-4dd5fd75c6118b7161fca2ffd991842a.png"
+          src="/doodleipsum-4dd5fd75c6118b7161fca2ffd991842a.png"
           height={300}
           width={300}
           alt="Cybersecurity"
@@ -126,8 +131,9 @@ function Card3() {
       </h5>
       <div>
         <Image
+        loader={ImageCard}
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
-          src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-5ef96019d86f8e5221c37d9733cb5492.png"
+          src="/doodleipsum-5ef96019d86f8e5221c37d9733cb5492.png"
           height={300}
           width={300}
           alt="Cleantech"
@@ -158,8 +164,9 @@ function Card4() {
       </h5>
       <div>
         <Image
+        loader={ImageCard}
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
-          src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-5af1ef6e7de4a6e775448b69ac0a9851.png"
+          src="/doodleipsum-5af1ef6e7de4a6e775448b69ac0a9851.png"
           height={300}
           width={300}
           alt="Mobility"
@@ -190,8 +197,9 @@ function Card5() {
       </h5>
       <div>
         <Image
+        loader={ImageCard}
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
-          src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-f701b63cfe38e57fa0408c238af32027.png"
+          src="/doodleipsum-f701b63cfe38e57fa0408c238af32027.png"
           height={300}
           width={300}
           alt="Creators"
@@ -222,8 +230,9 @@ function Card6() {
       </h5>
       <div>
         <Image
+        loader={ImageCard}
           className="p-6 bg-cover bg-no-repeat bg-trueGray-700"
-          src="https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/doodleipsum-3c3a259ced051ff05ebf18363560f8a3.png"
+          src="/doodleipsum-3c3a259ced051ff05ebf18363560f8a3.png"
           height={300}
           width={300}
           alt="del SOL"
