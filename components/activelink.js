@@ -19,8 +19,8 @@ function ActiveLink({ children, href }) {
       onClick={handleClick}
       className={classNames(
         router.asPath === href
-          ? "underline decoration-trueGray-700 dark:text-trueGray-100 decoration-solid underline-offset-8 text-trueGray-700 dark:text-trueGray-100"
-          : "text-trueGray-700 hover:underline hover:decoration-trueGray-700 dark:text-trueGray-100 dark:hover:decoration-trueGray-100",
+          ? "underline decoration-trueGray-700 dark:text-trueGray-100  decoration-4 underline-offset-8 text-trueGray-700 dark:text-trueGray-100"
+          : "text-trueGray-700 hover:underline decoration-4 hover:decoration-trueGray-700 dark:text-trueGray-100 dark:hover:decoration-trueGray-100 hover:underline-offset-8",
         "block px-3 py-2 rounded-md text-base font-medium"
       )}
     >
