@@ -14,7 +14,7 @@ const Faq = () => {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left rounded-lg hover:bg-trueBlue-400 focus:outline-none focus-visible:ring focus-visible:ring-trueSky-100 focus-visible:ring-opacity-75 text-trueGray-700 bg-trueSky-400 dark:bg-trueSky-800 dark:text-trueGray-100">
+                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left rounded-lg hover:bg-trueBlue-400 focus:outline-none focus-visible:ring focus-visible:ring-trueSky-100 focus-visible:ring-opacity-75 font-bold text-trueGray-700 bg-trueSky-400 dark:bg-trueSky-800 dark:text-trueGray-100">
                     <span>{item.question}</span>
                     <ChevronUpIcon
                       className={`${
