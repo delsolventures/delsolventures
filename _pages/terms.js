@@ -1,3 +1,4 @@
+"use client";
 import { Collapse, Text, Table } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,9 @@ import SEO from "../components/seo";
 import PopupWidget from "../components/popupWidget";
 
 const ImageTerms = ({ src, width, quality }) => {
-  return `https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/${src}?w=${width}&q=${quality || 75}`;
+  return `https://storageapi.fleek.co/20626237-8360-4375-83b2-2294cdded30d-bucket/img/${src}?w=${width}&q=${
+    quality || 75
+  }`;
 };
 
 export default function Terms() {
@@ -30,7 +33,7 @@ export default function Terms() {
                   Last Updated 1 Jan {new Date().getFullYear()}
                 </div>
                 <Image
-                loader={ImageTerms}
+                  loader={ImageTerms}
                   className="relative block mx-auto px-8"
                   src="/doodleipsum-ed98837bc0b91d677c167bd1957ca1a6.png"
                   height={500}
