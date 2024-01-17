@@ -13,7 +13,7 @@ export default function Cta() {
       <div className="flex-shrink-0 w-full text-center lg:w-auto">
         <Link
           href="/portfolio"
-          className="btn btn-primary btn-wide p-2 mx-auto text-lg text-center rounded-md text-primary-content"
+          className="btn btn-primary btn-wide p-2 mx-auto text-lg text-center rounded-md"
         >
           View Portfolio
         </Link>
