@@ -5,10 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
     "post-update": "yarn upgrade --latest"
   },
   "repository": {

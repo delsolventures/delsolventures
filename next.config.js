@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
+  output: "export",
   reactStrictMode: true,
   images: {
     //domains: ["storageapi.fleek.co", "savivets.wpengine.com"],
